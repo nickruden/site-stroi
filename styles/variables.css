@@ -1,0 +1,47 @@
+:root {
+    --color-theme: rgb(31, 104, 239, 1);
+    --color-text: rgba(119, 119, 119, 1);
+    --color-title: rgba(40, 40, 40, 1);
+    --color-border: rgba(226, 226, 226, 1);
+    --color-secondary: rgba(247, 247, 247, 1);
+    --color-gray: rgba(243, 244, 247, 1);
+    --padding: 2rem;
+    --space: 1.5rem;
+    --size-medium: 4rem;
+    --size-large: 6rem;
+    --size-extra: 9rem;
+    --header-height: 6.2rem;
+    --fz-s: 1.4rem;
+    --fz-m: 1.6rem;
+    --fz-l: 1.8rem;
+    --radius: 1.2rem;
+}
+
+@media (max-width: 1199px) {
+    :root {
+        --padding: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    :root {
+        --padding: 1rem;
+        --header-height: 5.1rem;
+        --space: 1rem;
+    }
+}
+
+.fancybox__container {
+    --fancybox-bg: rgba(0, 0, 0, 0.2);
+}
+
+.is-compact .fancybox__content > .f-button.is-close-btn {
+    --f-button-bg: transparent;
+    --f-button-hover-bg: transparent;
+    --f-button-active-bg: transparent;
+    --f-button-svg-width: 32px;
+    --f-button-svg-height: 32px;
+    --f-button-svg-stroke-width: auto;
+    top: 15px;
+    right: 15px;
+}

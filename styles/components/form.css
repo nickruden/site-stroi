@@ -1,0 +1,53 @@
+/* ФОРМА */
+.form--vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form label span {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.form input:not([type=checkbox]) {
+  width: 100%;
+  height: 65px;
+  font-size: var(--fz-l);
+  color: #fff;
+  background-color: var(--color-border);
+  padding: 2rem;
+}
+
+.form [type=submit] {
+  height: 70px;
+}
+
+.form [type=checkbox] {
+  width: 19px;
+  height: 19px;
+}
+
+.form .agreement {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.2;
+}
+
+.form .agreement a {
+  text-decoration: underline;
+}
+
+.form.form--dark input {
+  background-color: #202020;
+  border-color: #202020;
+}
+
+.form.form--dark label span {
+  color: #909090;
+}
+
+.form.form--dark .agreement span {
+  color: #fff;
+}
