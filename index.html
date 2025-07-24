@@ -19,10 +19,13 @@
   <link rel="stylesheet" href="./styles/custom.css">
 
   <link rel="stylesheet" href="./styles/UI/button.css">
+  <link rel="stylesheet" href="./styles/UI/checkbox.css">
 
   <link rel="stylesheet" href="./styles/components/header.css">
   <link rel="stylesheet" href="./styles/components/form.css">
   <link rel="stylesheet" href="./styles/components/modal.css">
+
+  <link rel="stylesheet" href="./styles/components/sections/how-work.css">
 
 
   <!-- СТИЛИ ДЛЯ СТРАНИЦЫ -->
@@ -39,7 +42,7 @@
             <div class="logo__text">Вебстудия полного цикла</div>
           </a>
         </div>
-        <div class="col-auto me-auto me-sm-none" style="align-items: initial;">
+        <div class="col-auto me-auto" style="align-items: initial;">
           <div class="city">
             <button class="city__current">г. Краснодар</button>
             <div class="city__wrap">
@@ -163,7 +166,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-auto d-none d-md-flex">
+        <div class="col-auto d-none d-md-flex ms-sm-auto">
           <div class="header__phones">
             <a href="tel:" class="phone">+7 999 633 33 28</a>
           </div>
@@ -277,13 +280,14 @@
     </div>
   </header>
 
+  
   <main class="main">
     <section class="intro">
       <div class="my-container py-large">
         <div class="grid gap-6">
           <div class="intro__col">
             <h1>
-              <span class="colored">Продвинем сайт по SEO приведём</span> платящих клиентов
+              <span class="colored">Продвинем сайт по SEO</span> приведём платящих клиентов
             </h1>
             <div class="intro__text">
               <p>Полный спектр услуг для эффективного онлайн-присутствия: от дизайна до трафика.</p>
@@ -330,19 +334,20 @@
         </ul>
       </div>
     </section>
-    <section class="py-large">
+    
+    <section class="py-large preferences">
       <div class="my-container">
         <h2 class="mb-large">Преимущества <span class="colored">SEO трафика</span></h2>
-        <div class="preference-row grid grid-cols-3 gap-4">
-          <div class="preference pb-medium">
+        <div class="preference-row grid grid-cols-3 gap-4 grid-auto-height">
+          <div class="preference">
             <h3>Экономия средств</h3>
             <span>Самый дешевый  из всех. От 3-20 раз дешевле Яндекс Директ</span>
           </div>
-          <div class="preference pb-medium">
+          <div class="preference">
             <h3>Высокая конверсия</h3>
             <span>Люди больше доверяется естественной выдачи и знают как отличить директ</span>
           </div>
-          <div class="preference pb-medium">
+          <div class="preference">
             <h3>Эффект “лавины”</h3>
             <span>Чем дольше двигаешься, тем больше ключевиков выходит</span>
           </div>
@@ -361,13 +366,14 @@
         </div>
       </div>
     </section>
+
     <section class="py-medium cases cases--main">
       <div class="my-container">
         <div class="cases__wrap grid grid-cols-3 gap-4">
           <div class="cases__left">
             <h2 class="cases__title">Кейсы</h2>
           </div>
-          <div class="cases__right cases__bg">
+          <div class="cases__right">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -446,7 +452,8 @@
           </div>
         </div>
     </section>
-    <section class="py-large">
+    
+    <section class="py-large services">
       <div class="my-container">
         <h2 class="mb-large">Наши <span class="colored">услуги</span></h2>
         <div class="service-wrap grid grid-cols-3 gap-column-4 gap-row-9">
@@ -532,37 +539,39 @@
             </div>
           </div>
         </div>
-        <div class="mt-large">
+        <div class="mt-large services__link">
           <a href="/" class="btn btn--border-theme w-full">Смотреть все услуги</a>
         </div>
       </div>
     </section>
-    <section class="py-large bg-dark">
+
+    <section class="py-large bg-dark form-block">
       <div class="my-container">
-        <div class="flex flex-column flex-md-row gap-4">
-          <div class="col">
+        <div class="flex flex-column flex-md-row gap-5">
+          <div class="col flex flex-column gap-3">
             <h2><span class="colored">Проведем аудит</span> ваших кампаний <span class="colored">бесплатно!</span></h2>
             <p>Проверим ваши кампании и расскажем про основные ошибки. На примерах покажем, куда расходуются ваши
               средства, и дадим рекомендации по повышению эффективности вашей рекламы</p>
           </div>
           <div class="col">
-            <p class="fz-l">Заполните форму ниже.<br>Мы свяжемся с вами в ближайшее рабочее время</p>
+            <p class="fz-l mb-small">Заполните форму ниже.<br>Мы свяжемся с вами в ближайшее рабочее время</p>
             <form class="form form--vertical form--dark" action="">
-              <label>
+              <label class="input-wrap">
                 <span>Имя*</span>
                 <input type="text" placeholder="Иван" required>
               </label>
-              <label>
+              <label class="input-wrap">
                 <span>Номер телефона*</span>
                 <input type="tel" placeholder="+7 (999) 999-99-99" required>
               </label>
-              <label>
+              <label class="input-wrap">
                 <span>Адрес сайта*</span>
                 <input type="text" placeholder="www">
               </label>
-              <label class="agreement">
-                <input type="checkbox" name="agreement" id="agreement" required>
-                <span>Вы соглашаетесь <a href="/privacy">с условиями обработки персональных данных</a></span>
+              <label class="agreement my-checkbox">
+                <input class="my-checkbox__old" type="checkbox" name="agreement" id="agreement" required>
+                <div class="my-checkbox__new"></div>
+                <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки персональных данных</a></span>
               </label>
               <button type="submit" class="btn btn--theme">Отправить заявку</button>
             </form>
@@ -570,7 +579,8 @@
         </div>
       </div>
     </section>
-    <section class="thanks-letters py-medium bg-gray">
+
+    <section class="thanks-letters py-medium bg-gray overflow-hidden">
       <div class="my-container">
         <header class="flex items-center justify-between gap-4 mb-large">
           <h2 class="mb-0">Письма и <span class="colored">благодарности</span></h2>
@@ -579,11 +589,12 @@
                 <div class="swiper-btn-next colored">-></div>
             </div>
         </header>
-        <div class="swiper">
+        <div class="swiper swiper-visible-outline">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a data-fancybox href="img/thanks/thanks-letter-1.webp"><img src="./assets/images/thanks/thanks-letter-1.webp"
-                  alt=""></a>
+              <a data-fancybox href="./assets/images/thanks/thanks-letter-1.webp">
+                <img src="./assets/images/thanks/thanks-letter-1.webp" alt="">
+              </a>
             </div>
             <div class="swiper-slide">
               <img src="./assets/images/thanks/thanks-letter-1.webp" alt="">
@@ -592,8 +603,9 @@
               <img src="./assets/images/thanks/thanks-letter-1.webp" alt="">
             </div>
             <div class="swiper-slide">
-              <a data-fancybox href="img/thanks/thanks-letter-1.webp"><img src="./assets/images/thanks/thanks-letter-1.webp"
-                  alt=""></a>
+              <a data-fancybox href="./assets/images/thanks/thanks-letter-1.webp">
+                <img src="./assets/images/thanks/thanks-letter-1.webp" alt="">
+              </a>
             </div>
             <div class="swiper-slide">
               <img src="./assets/images/thanks/thanks-letter-1.webp" alt="">
@@ -609,9 +621,10 @@
           </div>
         </div>
     </section>
-    <section class="py-large">
+
+    <section class="py-large how-work">
       <div class="my-container">
-        <div class="flex flex-column flex-md-row gap-4 items-start">
+        <div class="flex flex-column flex-md-row gap-4 gap-lg-0 items-start">
           <div class="col position-md-sticky">
             <h2 class="mb-0"><span class="colored">Как</span> мы работаем</h2>
           </div>
@@ -649,7 +662,7 @@
                   улучшению видимости и позиций сайта в поисковых системах и аналитики полученных результатов.</p>
               </div>
               <div>
-                <a href="#order" class="btn btn--theme fz-l" data-fancybox>Обсудить проект</a>
+                <a href="#order" class="btn btn--theme fz-l">Обсудить проект</a>
               </div>
             </div>
           </div>
@@ -658,7 +671,11 @@
     </section>
   </main>
 
-  <footer></footer>
+
+  <footer class="footer">
+
+  </footer>
+
 
   <div class="modal" id="order">
     <h2>Оставить <span class="colored">заявку</span></h2>

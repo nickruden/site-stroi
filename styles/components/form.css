@@ -5,9 +5,22 @@
   gap: 2rem;
 }
 
+@media (max-width: 767px) {
+  .form--vertical {
+    gap: 2.5rem;
+  }
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
 .form label span {
   display: block;
   font-size: 1.2rem;
+  line-height: 120%;
 }
 
 .form input:not([type=checkbox]) {
@@ -23,12 +36,7 @@
   height: 70px;
 }
 
-.form [type=checkbox] {
-  width: 19px;
-  height: 19px;
-}
-
-.form .agreement {
+/* .form .agreement {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -37,7 +45,7 @@
 
 .form .agreement a {
   text-decoration: underline;
-}
+} */
 
 .form.form--dark input {
   background-color: #202020;
@@ -48,6 +56,6 @@
   color: #909090;
 }
 
-.form.form--dark .agreement span {
+.form.form--dark .my-checkbox span {
   color: #fff;
 }

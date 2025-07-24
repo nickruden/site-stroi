@@ -48,6 +48,8 @@ accordionHeader.on("click", function() {
 
 // Slider cases
 const swiper = new Swiper('.cases__wrap .swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
   navigation: {
     nextEl: '.cases .swiper-btn-next',
     prevEl: '.cases .swiper-btn-prev',
@@ -55,18 +57,19 @@ const swiper = new Swiper('.cases__wrap .swiper', {
 });
 
 const swiper2 = new Swiper('.thanks-letters .swiper', {
-  slidesPerView: 1,
+  slidesPerView: 1.15,
+  spaceBetween: 20,
   navigation: {
     nextEl: '.thanks-letters .swiper-btn-next',
     prevEl: '.thanks-letters .swiper-btn-prev',
   },
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 2.15,
       spaceBetween: 20
     },
     992: {
-        slidesPerView: 3,
+        slidesPerView: 3.15,
         spaceBetween: 30,
     }
   }

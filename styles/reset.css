@@ -82,6 +82,10 @@ a:focus-visible {
   outline: none;
 }
 
+a[data-fancybox] {
+  display: block;
+}
+
 ol,
 ul {
   padding: 0;
@@ -95,7 +99,6 @@ iframe {
 }
 
 img {
-  height: 100%;
   max-width: 100%;
   object-fit: cover;
 }
@@ -162,18 +165,21 @@ main > :first-child {
 
 @media (max-width: 991px) {
   .my-container {
-    width: 720px;
+    /* width: 720px; */
+    padding: 0px 30px;
   }
 }
 
 @media (max-width: 767px) {
   .my-container {
-    width: 540px;
+    /* width: 540px; */
+    padding: 0px 20px;
   }
 }
 
 @media (max-width: 575px) {
   .my-container {
     width: 100%;
+    padding: 0px var(--padding);
   }
 }

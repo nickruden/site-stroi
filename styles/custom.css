@@ -24,6 +24,7 @@ h1,
 }
 
 @media (max-width: 575px) {
+
   h1,
   .h1 {
     font-size: 3.6rem;
@@ -37,6 +38,7 @@ h2,
 }
 
 @media (max-width: 575px) {
+
   h2,
   .h2 {
     font-size: 2.6rem;
@@ -50,6 +52,7 @@ h3,
 }
 
 @media (max-width: 575px) {
+
   h3,
   .h3 {
     font-size: 1.8rem;
@@ -80,6 +83,10 @@ h3,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-auto-height {
+  grid-auto-rows: 1fr;
+}
+
 @media (max-width: 991px) {
   .grid-cols-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -89,6 +96,10 @@ h3,
 @media (max-width: 767px) {
   .grid-cols-3 {
     grid-template-columns: 1fr;
+  }
+
+  .grid-auto-height {
+    grid-auto-rows: auto;
   }
 
   .grid-cols-3.gap-4 {
@@ -130,6 +141,15 @@ h3,
 
 
 /* ГАПЫ */
+.gap-3 {
+  gap: var(--size-small-plus);
+}
+
+.gap-column-3 {
+  -moz-column-gap: var(--size-small-plus);
+  column-gap: var(--size-small-plus);
+}
+
 .gap-4 {
   gap: var(--size-medium);
 }
@@ -137,6 +157,15 @@ h3,
 .gap-column-4 {
   -moz-column-gap: var(--size-medium);
   column-gap: var(--size-medium);
+}
+
+.gap-5 {
+  gap: var(--size-medium-plus);
+}
+
+.gap-column-5 {
+  -moz-column-gap: var(--size-medium-plus);
+  column-gap: var(--size-medium-plus);
 }
 
 .gap-6 {
@@ -152,9 +181,21 @@ h3,
   row-gap: var(--size-extra);
 }
 
+@media (max-width: 767px) {
+  .gap-row-9 {
+    row-gap: var(--size-large);
+  }
+}
+
 @media (max-width: 575px) {
   .gap-row-9 {
     row-gap: var(--size-medium);
+  }
+}
+
+@media (min-width: 1199px) {
+  .gap-lg-0 {
+    gap: 0px;
   }
 }
 
@@ -171,8 +212,8 @@ h3,
 
 @media (max-width: 575px) {
   .py-large {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -192,6 +233,10 @@ h3,
 /* МАРДЖИНЫ */
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.mb-small {
+  margin-bottom: var(--size-small);
 }
 
 .mb-large {
@@ -220,6 +265,16 @@ h3,
 
 .ms-auto {
   margin-left: auto !important;
+}
+
+@media (min-width: 576px) {
+  .me-sm-auto {
+    margin-right: auto !important;
+  }
+
+  .ms-sm-auto {
+    margin-left: auto !important;
+  }
 }
 
 
@@ -352,8 +407,16 @@ h3,
   white-space: nowrap;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 
 /* СВИПЕР */
+.swiper-visible-outline.swiper {
+  overflow: visible;
+}
+
 [class*=swiper-btn] {
   cursor: pointer;
   display: inline-flex;

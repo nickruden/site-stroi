@@ -7,7 +7,10 @@
     --color-gray: rgba(243, 244, 247, 1);
     --padding: 2rem;
     --space: 1.5rem;
+    --size-small: 2rem;
+    --size-small-plus: 3rem;
     --size-medium: 4rem;
+    --size-medium-plus: 5rem;
     --size-large: 6rem;
     --size-extra: 9rem;
     --header-height: 6.2rem;
