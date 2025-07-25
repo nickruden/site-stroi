@@ -1,0 +1,17 @@
+.FAQ {}
+
+.FAQ__container {}
+
+.FAQ__accordion {}
+
+@media (max-width: 768px) {
+    .FAQ__accordion {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 575px) {
+    .FAQ__accordion {
+        margin-bottom: 40px;
+    }
+}

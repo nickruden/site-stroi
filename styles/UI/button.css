@@ -18,6 +18,27 @@ button {
   box-sizing: border-box;
 }
 
+.btn--emptyTheme {
+  padding: 0rem;
+  justify-content: flex-start;
+  line-height: 140%;
+}
+
+.btn--emptyTheme:hover, .btn--emptyTheme.active {
+  color: var(--color-theme);
+}
+
+.btn--emptyTheme-reverse {
+  padding: 0rem;
+  justify-content: flex-start;
+  color: var(--color-theme);
+  line-height: 140%;
+}
+
+.btn--emptyTheme-reverse:hover {
+  color: #174db1;
+}
+
 .btn--theme {
   background-color: var(--color-theme);
   border: 1px solid var(--color-theme);

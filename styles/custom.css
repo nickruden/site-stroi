@@ -52,7 +52,6 @@ h3,
 }
 
 @media (max-width: 575px) {
-
   h3,
   .h3 {
     font-size: 1.8rem;
@@ -63,6 +62,14 @@ h3,
 /* КЛАССЫ ДЛЯ ТЕКСТА */
 .fz-l {
   font-size: var(--fz-l);
+}
+
+.fz-m {
+  font-size: var(--fz-m);
+}
+
+.fz-s {
+  font-size: var(--fz-s);
 }
 
 .font-medium {
@@ -131,6 +138,10 @@ h3,
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -139,11 +150,22 @@ h3,
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 
 /* ГАПЫ */
 .gap-3 {
   gap: var(--size-small-plus);
 }
+
+@media (min-width: 1199px) {
+.gap-3 {
+  gap: var(--size-small-plus);
+}
+}
+
 
 .gap-column-3 {
   -moz-column-gap: var(--size-small-plus);
@@ -239,6 +261,30 @@ h3,
   margin-bottom: var(--size-small);
 }
 
+.mb-small-plus {
+  margin-bottom: var(--size-small-plus);
+}
+
+@media (max-width: 575px) {
+  .mb-small-plus {
+    margin-bottom: var(--size-small);
+  }
+}
+
+.mb-medium {
+  margin-bottom: var(--size-medium);
+}
+
+.mb-medium-plus {
+  margin-bottom: var(--size-medium-plus);
+}
+
+@media (max-width: 575px) {
+  .mb-medium-plus {
+    margin-bottom: var(--size-medium);
+  }
+}
+
 .mb-large {
   margin-bottom: var(--size-large);
 }
@@ -257,6 +303,10 @@ h3,
   .mt-large {
     margin-top: var(--size-medium);
   }
+}
+
+.mt-auto {
+  margin-top: auto !important;
 }
 
 .me-auto {
@@ -312,6 +362,10 @@ h3,
 
   .d-lg-flex {
     display: flex !important;
+  }
+
+  .flex-lg-row {
+    flex-direction: row !important;
   }
 
   .me-lg-none {
@@ -417,6 +471,24 @@ h3,
   overflow: visible;
 }
 
+.align-stretch .swiper-wrapper {
+  align-items: stretch;
+}
+
+.align-stretch .swiper-slide {
+  height: auto;
+}
+
+.align-stretch .slide__inner {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .align-stretch .slide__content {
+    height: 100%;
+  }
+}
+
 [class*=swiper-btn] {
   cursor: pointer;
   display: inline-flex;
@@ -428,6 +500,7 @@ h3,
   border: 2px solid var(--color-border);
   background-color: var(--color-border);
   transition: background-color ease 0.2s, color ease 0.2s;
+  user-select: none;
 }
 
 [class*=swiper-btn].colored {

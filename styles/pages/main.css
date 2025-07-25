@@ -352,3 +352,169 @@
     margin-top: var(--size-small);
   }
 }
+
+
+/* БОЛЕЕ 10 ЛЕТ РАБОТАЕМ */
+.long-work {}
+
+.long-work .slide__inner {
+  padding: 8rem 0rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.8rem;
+  gap: 1.4rem;
+}
+
+.long-work .slide__img {
+  width: 176px;
+  height: 176px;
+}
+
+.long-work .slide__content {
+  gap: 0.5rem;
+}
+
+
+.long-work .slide__title {
+  color: var(--color-title);
+}
+
+
+/* АКЦИИ И БОНУСЫ */
+.promotions {}
+
+@media (min-width: 992px) {
+  .promotions .swiper-slide {
+    width: calc(100% / 1.86 - 50px);
+    flex-shrink: 0;
+  }
+}
+
+.promotions .slide__inner {
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .promotions .slide__inner {
+    align-items: flex-start;
+  }
+}
+
+.promotions .slide__img {
+  border-radius: var(--radius);
+  max-width: 196px;
+  max-height: 196px;
+}
+
+@media (max-width: 992px) {
+  .promotions .slide__img {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.promotions .slide__content {
+  max-width: 370px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .promotions .slide__content {
+    max-width: 418px;
+  }
+}
+
+.promotions .slide__texts {
+  gap: 0.8rem;
+  max-width: 300px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .promotions .slide__texts {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotions .slide__texts {
+    max-width: none;
+  }
+}
+
+
+/* НАШИ СТАТЬИ */
+.our-articles {}
+
+.our-articles__inner {
+  gap: var(--size-large);
+}
+
+@media (max-width: 575px) {
+  .our-articles__inner {
+    gap: var(--size-medium);
+  }
+}
+
+.our-articles__header {
+  gap: var(--size-small-plus);
+}
+
+@media (max-width: 575px) {
+  .our-articles__header {
+    gap: var(--size-medium);
+  }
+}
+
+.our-articles__switch-buttons {
+  gap: 1.5rem 2.5rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .our-articles__switch-buttons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  .our-articles__switch-buttons {
+    gap: 1rem 2.5rem;
+  }
+}
+
+.our-articles__swiper {
+  margin-bottom: var(--size-large);
+}
+
+@media (max-width: 575px) {
+  .our-articles__swiper {
+    margin-bottom: 26px;
+  }
+}
+
+.our-articles .slide__inner {
+  gap: 1.8rem;
+}
+
+.our-articles .slide__img {
+  max-width: 560px;
+  max-height: 350px;
+}
+
+@media (max-width: 768px) {
+  .our-articles .slide__img {
+    max-width: none;
+  }
+
+}
+
+.our-articles .slide__content {
+  gap: 2rem;
+  height: 100%;
+}
+
+.our-articles .slide__title {
+  color: var(--color-title);
+  margin-bottom: 1.5rem;
+}

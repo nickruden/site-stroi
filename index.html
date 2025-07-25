@@ -14,7 +14,7 @@
 
 
   <!-- ОБЩИЕ СТИЛИ -->
-   <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/variables.css">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/custom.css">
 
@@ -24,8 +24,10 @@
   <link rel="stylesheet" href="./styles/components/header.css">
   <link rel="stylesheet" href="./styles/components/form.css">
   <link rel="stylesheet" href="./styles/components/modal.css">
+  <link rel="stylesheet" href="./styles/components/my-accordion.css">
 
   <link rel="stylesheet" href="./styles/components/sections/how-work.css">
+  <link rel="stylesheet" href="./styles/components/sections/FAQ.css">
 
 
   <!-- СТИЛИ ДЛЯ СТРАНИЦЫ -->
@@ -199,8 +201,8 @@
         </div>
         <ul class="mob-menu__nav">
           <li>
-            <div class="accordion-header active">Услуги</div>
-            <div class="accordion-content">
+            <div class="my-accordion-header active">Услуги</div>
+            <div class="my-accordion-content">
               <ul>
                 <li><a href="#">Реклама и продвижение</a></li>
                 <li><a href="#">Контекстная реклама</a></li>
@@ -214,8 +216,8 @@
             </div>
           </li>
           <li>
-            <div class="accordion-header">Сопровождение сайтов</div>
-            <div class="accordion-content" style="display: none;">
+            <div class="my-accordion-header">Сопровождение сайтов</div>
+            <div class="my-accordion-content">
               <ul>
                 <li><a href="#">Наполнение сайта контентом</a></li>
                 <li><a href="#">Поддержка и развитие сайтов</a></li>
@@ -224,8 +226,8 @@
             </div>
           </li>
           <li>
-            <div class="accordion-header">Купить</div>
-            <div class="accordion-content" style="display: none;">
+            <div class="my-accordion-header">Купить</div>
+            <div class="my-accordion-content">
               <ul>
                 <li><a href="#">Готовые сайты</a></li>
                 <li><a href="#">Интернет-магазин</a></li>
@@ -235,8 +237,8 @@
             </div>
           </li>
           <li>
-            <div class="accordion-header">Полезное</div>
-            <div class="accordion-content" style="display: none;">
+            <div class="my-accordion-header">Полезное</div>
+            <div class="my-accordion-content">
               <ul>
                 <li><a href="#">Акции и бонусы</a></li>
                 <li><a href="#">FAQ</a></li>
@@ -245,8 +247,8 @@
             </div>
           </li>
           <li>
-            <div class="accordion-header">Кейсы</div>
-            <div class="accordion-content" style="display: none;">
+            <div class="my-accordion-header">Кейсы</div>
+            <div class="my-accordion-content">
               <ul>
                 <li><a href="#">Сайты</a></li>
                 <li><a href="#">Реклама и продвижение</a></li>
@@ -254,8 +256,8 @@
             </div>
           </li>
           <li>
-            <div class="accordion-header">Компания</div>
-            <div class="accordion-content" style="display: none;">
+            <div class="my-accordion-header">Компания</div>
+            <div class="my-accordion-content">
               <ul>
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Документы</a></li>
@@ -280,7 +282,7 @@
     </div>
   </header>
 
-  
+
   <main class="main">
     <section class="intro">
       <div class="my-container py-large">
@@ -316,7 +318,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="info d-lg-none">
       <div class="my-container">
         <ul class="info-list">
@@ -335,7 +337,7 @@
         </ul>
       </div>
     </section>
-    
+
     <section class="py-large preferences">
       <div class="my-container">
         <h2 class="mb-large">Преимущества <span class="colored">SEO трафика</span></h2>
@@ -448,12 +450,12 @@
           </div>
         </div>
         <div class="cases__btns swiper-buttons">
-          <div class="swiper-btn-prev colored"><-</div>
-              <div class="swiper-btn-next colored">-></div>
+          <div class="swiper-btn-prev colored"> <- </div>
+              <div class="swiper-btn-next colored"> -> </div>
           </div>
         </div>
     </section>
-    
+
     <section class="py-large services">
       <div class="my-container">
         <h2 class="mb-large">Наши <span class="colored">услуги</span></h2>
@@ -572,7 +574,8 @@
               <label class="agreement my-checkbox">
                 <input class="my-checkbox__old" type="checkbox" name="agreement" id="agreement" required>
                 <div class="my-checkbox__new"></div>
-                <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки персональных данных</a></span>
+                <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки персональных
+                    данных</a></span>
               </label>
               <button type="submit" class="btn btn--theme">Отправить заявку</button>
             </form>
@@ -586,8 +589,8 @@
         <header class="flex items-center justify-between gap-4 mb-large">
           <h2 class="mb-0">Письма и <span class="colored">благодарности</span></h2>
           <div class="swiper-buttons d-none d-md-flex">
-            <div class="swiper-btn-prev colored"><-</div>
-                <div class="swiper-btn-next colored">-></div>
+            <div class="swiper-btn-prev colored"> <- </div>
+                <div class="swiper-btn-next colored"> -> </div>
             </div>
         </header>
         <div class="swiper swiper-visible-outline">
@@ -617,8 +620,8 @@
           </div>
         </div>
         <div class="swiper-buttons swiper-buttons--mobile d-md-none">
-          <div class="swiper-btn-prev colored"><-</div>
-              <div class="swiper-btn-next colored">-></div>
+          <div class="swiper-btn-prev colored"> <- </div>
+              <div class="swiper-btn-next colored"> -> </div>
           </div>
         </div>
     </section>
@@ -670,11 +673,270 @@
         </div>
       </div>
     </section>
+
+    <section class="long-work py-medium bg-gray overflow-hidden">
+      <div class="my-container">
+        <header class="flex items-center justify-between gap-4 mb-large">
+          <h2 class="mb-0"><span class="colored">Более 10 лет</span> работаем c SEO и&nbsp;помогаем клиентам расти</h2>
+          <div class="swiper-buttons d-none d-md-flex">
+            <div class="swiper-btn-prev colored"> <- </div>
+                <div class="swiper-btn-next colored"> -> </div>
+            </div>
+        </header>
+        <div class="swiper swiper-visible-outline">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column items-center">
+                <img src="./assets/images/long-work/slide-1.png" alt="" class="slide__img">
+                <div class="slide__content flex flex-column items-center">
+                  <div class="slide__title fz-l font-medium">Руслан Шарафутдинов</div>
+                  <p class="slide__text fz-m">Генеральный директор</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column items-center">
+                <img src="./assets/images/long-work/slide-2.png" alt="" class="slide__img">
+                <div class="slide__content flex flex-column items-center">
+                  <div class="slide__title fz-l font-medium">Тищенко Илья</div>
+                  <p class="slide__text fz-m">Дизайнер</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column items-center">
+                <img src="./assets/images/long-work/slide-3.png" alt="" class="slide__img">
+                <div class="slide__content flex flex-column items-center">
+                  <div class="slide__title fz-l font-medium">Анна Трубина</div>
+                  <p class="slide__text fz-m">Дизайнер</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column items-center">
+                <img src="./assets/images/long-work/slide-3.png" alt="" class="slide__img">
+                <div class="slide__content flex flex-column items-center">
+                  <div class="slide__title fz-l font-medium">Анна Трубина</div>
+                  <p class="slide__text fz-m">Дизайнер</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-buttons swiper-buttons--mobile d-md-none">
+          <div class="swiper-btn-prev colored"> <- </div>
+              <div class="swiper-btn-next colored"> -> </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="promotions py-large overflow-hidden">
+      <div class="my-container">
+        <header class="flex items-center justify-between gap-4 mb-medium-plus">
+          <h2 class="mb-0"><span class="colored">Акции</span> и бонусы</h2>
+          <div class="swiper-buttons d-none d-md-flex">
+            <div class="swiper-btn-prev colored"> <- </div>
+                <div class="swiper-btn-next colored"> -> </div>
+            </div>
+        </header>
+        <div class="swiper swiper-visible-outline align-stretch">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column flex-lg-row">
+                <img src="./assets/images/promotions/slide-img.webp" alt="" class="slide__img">
+                <div class="slide__content flex flex-column">
+                  <div class="slide__texts flex flex-column mb-small">
+                    <h3 class="slide__title mb-0">5.000 за 5 минут</h3>
+                    <p class="slide__text fz-m">Ответьте всего на 9 вопросов и&nbsp;получите скидку 5000 рублей на
+                      разработку сайта</p>
+                  </div>
+                  <a href="" class="promotions__slide-link mt-auto"><span class="colored">Подробнее -></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column flex-lg-row">
+                <img src="./assets/images/promotions/slide-img.webp" alt="" class="slide__img">
+                <div class="slide__content flex flex-column">
+                  <div class="slide__texts mb-small">
+                    <h3 class="slide__title">5.000 за 5 минут</h3>
+                    <p class="slide__text fz-m">Ответьте всего на 9 вопросов и&nbsp;получите скидку 5000 рублей на
+                      разработку сайта</p>
+                  </div>
+                  <a href="" class="promotions__slide-link mt-auto"><span class="colored">Подробнее -></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__inner flex flex-column flex-lg-row">
+                <img src="./assets/images/promotions/slide-img.webp" alt="" class="slide__img">
+                <div class="slide__content flex flex-column">
+                  <div class="slide__texts mb-small">
+                    <h3 class="slide__title">5.000 за 5 минут</h3>
+                    <p class="slide__text fz-m">Ответьте всего на 9 вопросов и&nbsp;получите скидку 5000 рублей на
+                      разработку сайта</p>
+                  </div>
+                  <a href="" class="promotions__slide-link mt-auto"><span class="colored">Подробнее -></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-buttons swiper-buttons--mobile d-md-none">
+          <div class="swiper-btn-prev colored"> <- </div>
+              <div class="swiper-btn-next colored"> -> </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="FAQ py-medium bg-gray">
+      <div class="my-container">
+        <div class="flex flex-column FAQ__inner">
+          <header class="flex items-center justify-between gap-4 mb-large">
+            <h2 class="mb-0">Ответы на <span class="colored">часто <br> задаваемые вопросы</span></h2>
+            <div class="flex flex-column d-none d-md-flex">
+              <p class="fz-m mb-small-plus">Не нашли ответ на свой вопрос? Задайте его сами!</p>
+              <button class="btn btn--theme">Задать вопрос</button>
+            </div>
+          </header>
+          <div class="my-accordion FAQ__accordion">
+            <div class="my-accordion-item">
+              <div class="my-accordion-header active">В чем разница трафикового продвижения&nbsp;и по позициям?</div>
+              <div class="my-accordion-content">
+                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних строчек поисковых
+                  систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли. Как правило
+                  количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями, исключения могут
+                  быть
+                  для крупных интернет-магазинов. Для каждого запроса выстраивается своя мини-стратегия SEO-продвижения.
+                  Работа носит эксклюзивный характер и стоит дорого.</p>
+              </div>
+            </div>
+            <div class="my-accordion-item">
+              <div class="my-accordion-header">Какие сроки достижения результата?</div>
+              <div class="my-accordion-content">
+                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних строчек поисковых
+                  систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли. Как правило
+                  количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями, исключения могут
+                  быть
+                  для крупных интернет-магазинов. Для каждого запроса выстраивается своя мини-стратегия SEO-продвижения.
+                  Работа носит эксклюзивный характер и стоит дорого.</p>
+              </div>
+            </div>
+            <div class="my-accordion-item">
+              <div class="my-accordion-header">Сколько времени понадобится, чтобы продвинуть сайт на
+                первую&nbsp;страницу в Яндексе?</div>
+              <div class="my-accordion-content">
+                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних строчек поисковых
+                  систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли. Как правило
+                  количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями, исключения могут
+                  быть
+                  для крупных интернет-магазинов. Для каждого запроса выстраивается своя мини-стратегия SEO-продвижения.
+                  Работа носит эксклюзивный характер и стоит дорого.</p>
+              </div>
+            </div>
+            <div class="my-accordion-item">
+              <div class="my-accordion-header">Стоит обращаться в компанию, если на сайт наложены санкции, и он
+                отсутствует в поиске?</div>
+              <div class="my-accordion-content">
+                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних строчек поисковых
+                  систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли. Как правило
+                  количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями, исключения могут
+                  быть
+                  для крупных интернет-магазинов. Для каждого запроса выстраивается своя мини-стратегия SEO-продвижения.
+                  Работа носит эксклюзивный характер и стоит дорого.</p>
+              </div>
+            </div>
+            <div class="my-accordion-item">
+              <div class="my-accordion-header">Из чего складывается оптимизация веб-сайта?</div>
+              <div class="my-accordion-content">
+                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних строчек поисковых
+                  систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли. Как правило
+                  количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями, исключения могут
+                  быть
+                  для крупных интернет-магазинов. Для каждого запроса выстраивается своя мини-стратегия SEO-продвижения.
+                  Работа носит эксклюзивный характер и стоит дорого.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-column d-md-none">
+            <p class="fz-m mb-small-plus">Не нашли ответ на свой вопрос? Задайте его сами!</p>
+            <button class="btn btn--theme">Задать вопрос</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-large our-articles overflow-hidden">
+      <div class="my-container">
+        <div class="flex flex-column our-articles__inner">
+          <header class="flex flex-column our-articles__header">
+            <h2 class="mb-0"><span class="colored">Наши статьи</span> о раскрутке сайтов</h2>
+            <div class="flex wrap our-articles__switch-buttons">
+              <button class="btn btn--emptyTheme active">Все</button>
+              <button class="btn btn--emptyTheme">SEO</button>
+              <button class="btn btn--emptyTheme">Создание сайтов</button>
+              <button class="btn btn--emptyTheme">Контекстная реклама</button>
+              <button class="btn btn--emptyTheme">E-commerce</button>
+              <button class="btn btn--emptyTheme">Оrm</button>
+              <button class="btn btn--emptyTheme">Serm</button>
+              <button class="btn btn--emptyTheme">Медицина</button>
+              <button class="btn btn--emptyTheme">Интернет-магазин</button>
+            </div>
+          </header>
+          <div class="our-articles__content">
+            <div class="swiper align-stretch our-articles__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide__inner flex flex-column">
+                    <img src="./assets/images/our-articles/slide-img.webp" alt="" class="slide__img">
+                    <div class="slide__content flex flex-column">
+                      <div class="slide__texts">
+                        <div class="slide__title fz-l">Разработка интернет-магазина: что это и для чего он нужен?</div>
+                        <div class="slide__text">Особенности и ключевые моменты в продвижении сайтов
+                          медицинской&nbsp;тематики.</div>
+                      </div>
+                      <a href="" class="btn btn--emptyTheme-reverse mt-auto slide__link">Подробнее -></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__inner flex flex-column">
+                    <img src="./assets/images/our-articles/slide-img.webp" alt="" class="slide__img">
+                    <div class="slide__content flex flex-column">
+                      <div class="slide__texts">
+                        <div class="slide__title fz-l">SEO-продвижение: всё обо всём</div>
+                        <div class="slide__text">Расскажем как избежать подводных камней при продвижение своего сайта в
+                          поисковых системах</div>
+                      </div>
+                      <a href="" class="btn btn--emptyTheme-reverse mt-auto slide__link">Подробнее -></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__inner flex flex-column">
+                    <img src="./assets/images/our-articles/slide-img.webp" alt="" class="slide__img">
+                    <div class="slide__content flex flex-column">
+                      <div class="slide__texts">
+                        <div class="slide__title fz-l">Разработка интернет-магазина: что это и для чего он нужен?</div>
+                        <div class="slide__text">Особенности и ключевые моменты в продвижении сайтов
+                          медицинской&nbsp;тематики.</div>
+                      </div>
+                      <a href="" class="btn btn--emptyTheme-reverse mt-auto slide__link">Подробнее -></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="btn btn--border-theme w-full">Показать еще</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
   <footer class="footer">
-
+    
   </footer>
 
 

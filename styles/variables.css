@@ -1,10 +1,10 @@
 :root {
-    --color-theme: rgb(31, 104, 239, 1);
-    --color-text: rgba(119, 119, 119, 1);
-    --color-title: rgba(40, 40, 40, 1);
-    --color-border: rgba(226, 226, 226, 1);
-    --color-secondary: rgba(247, 247, 247, 1);
-    --color-gray: rgba(243, 244, 247, 1);
+    --color-theme: #1f68ef;
+    --color-text: #777777;
+    --color-title: #282828;
+    --color-border: #e2e2e2;
+    --color-secondary: #f7f7f7;
+    --color-gray: #f3f4f7;
     --padding: 2rem;
     --space: 1.5rem;
     --size-small: 2rem;
