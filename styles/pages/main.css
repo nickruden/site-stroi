@@ -487,6 +487,12 @@
   margin-bottom: var(--size-large);
 }
 
+@media (max-width: 768px) {
+  .our-articles__swiper {
+    overflow: visible;
+  }
+}
+
 @media (max-width: 575px) {
   .our-articles__swiper {
     margin-bottom: 26px;
@@ -506,7 +512,6 @@
   .our-articles .slide__img {
     max-width: none;
   }
-
 }
 
 .our-articles .slide__content {
