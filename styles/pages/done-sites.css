@@ -75,12 +75,12 @@
     gap: 1.1rem;
 }
 
-.templates .slide__texts a:hover {
+.templates .slide__texts .slide__title:hover {
     color: #aaaaaa;
     cursor: pointer;
 }
 
-.templates .slide__texts a:hover {
+.templates .slide__texts .slide__title:hover {
     color: #aaaaaa;
 }
 

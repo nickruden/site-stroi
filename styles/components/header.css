@@ -213,6 +213,12 @@
   border-bottom: 1px solid var(--color-border);
   padding: 2rem 1rem;
 }
+.mob-menu .my-accordion-content ul, .mob-menu .my-accordion-content ol {
+  padding-left: 0;
+}
+.mob-menu .my-accordion-content li {
+  list-style: none;
+}
 
 /* .mob-menu .my-accordion-header.active+.my-accordion-content {
   display: block;
