@@ -82,3 +82,17 @@
 .form.form--dark .my-checkbox span {
   color: #fff;
 }
+
+.form.form--gray input {
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
+  color: #777777;
+}
+
+.form.form--gray label span {
+  color: #777777;
+}
+
+.form.form--gray .my-checkbox span {
+  color: #777777;
+}

@@ -1,7 +1,7 @@
 /* КНОПКА */
 button {
   font-family: "Inter", sans-serif;
-  font-size: var(--fz-l);
+  font-size: inherit;
 }
 
 .btn {
@@ -51,6 +51,17 @@ button {
   background: #fff;
 }
 
+.btn--whiteTheme {
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  color: var(--color-theme);
+}
+
+.btn--whiteTheme:hover {
+  color: #FFF;
+  background: transparent;
+}
+
 .btn--border-theme {
   border: 1px solid var(--color-theme);
   color: var(--color-theme);
@@ -59,6 +70,16 @@ button {
 .btn--border-theme:hover {
   color: #fff;
   background: var(--color-theme);
+}
+
+.btn--border-whiteTheme {
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.btn--border-whiteTheme:hover {
+  color: var(--color-theme);
+  background: #FFF;
 }
 
 .btn--icon-click:after {
