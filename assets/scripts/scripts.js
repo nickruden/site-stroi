@@ -151,3 +151,12 @@ const swiper5 = new Swiper(".our-articles .swiper", {
     },
   },
 });
+
+const swiper6 = new Swiper(".service-cases .swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".service-cases .swiper-btn-next",
+    prevEl: ".service-cases .swiper-btn-prev",
+  },
+});

@@ -1,17 +1,40 @@
 /* ФОРМА */
-.form--vertical {
+.form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 @media (max-width: 767px) {
-  .form--vertical {
+  .form {
     gap: 2.5rem;
   }
 }
 
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 767px) {
+  .form__inputs {
+    gap: 2.5rem;
+  }
+}
+
+.form--horizontal .form__inputs {
+  flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .form--horizontal .form__inputs {
+    flex-direction: column;
+  }
+}
+
 .input-wrap {
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: 7px;

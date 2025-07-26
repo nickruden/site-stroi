@@ -1,0 +1,664 @@
+/* ПЕРВЫЙ БЛОК */
+.intro {
+  position: relative;
+  z-index: 1;
+  background: url(../../assets/images/bg/intro.webp) no-repeat center/cover;
+}
+
+@media (max-width: 991px) {
+  .intro .my-container {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .intro .my-container {
+    padding-top: 6rem;
+    padding-bottom: 2.2rem;
+  }
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.90;
+}
+
+.intro__inner {
+  position: relative;
+  min-height: 334px;
+}
+
+@media (max-width: 575px) {
+  .intro__inner {
+    gap: 4.5rem;
+  }
+}
+
+.intro__texts {
+  max-width: 600px;
+}
+
+@media (max-width: 575px) {
+  .intro__texts h1 {
+    font-size: 2.6rem;
+    max-width: 340px;
+  }
+}
+
+.intro__text {
+  max-width: 600px;
+}
+
+.into__image {
+  max-width: 284px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .into__image {
+    position: static;
+    transform: translateY(0);
+  }
+}
+
+.intro__buttons {
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .intro__buttons {
+    gap: 30px;
+  }
+}
+
+.intro__btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  font-size: var(--fz-l);
+  font-weight: 500;
+  color: #404040;
+}
+
+@media (max-width: 575px) {
+  .intro__btn-wrap {
+    gap: 2rem;
+  }
+}
+
+.intro__btn-wrap .btn {
+  padding: 1.8rem 4.6rem;
+}
+
+@media (max-width: 575px) {
+  .intro__btn-wrap .btn {
+    padding: 1.8rem 3.3rem;
+  }
+}
+
+
+/* БЛОК С ИНФОРМАЦИЕЙ (ОБЪЯСНЕНИЕ И КАРТИНКА) */
+.service-info {
+  background-color: #FFF;
+  padding-bottom: 0rem;
+}
+
+@media (max-width: 991px) {
+  .service-info {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-info {
+    padding-top: 5rem;
+  }
+}
+
+.service-info__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+@media (max-width: 991px) {
+  .service-info__inner {
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-info__inner {
+    gap: 5rem;
+  }
+}
+
+.service-info__text-content {
+  display: flex;
+  border-left: 2px solid var(--color-theme);
+  padding: 2rem 0rem 2rem 2rem;
+  max-width: 1140px;
+}
+
+.service-info__img-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 350px;
+}
+
+.service-info__img-wrap img {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .service-info__img-wrap {
+    height: 310px;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-info__img-wrap {
+    height: 260px;
+  }
+}
+
+
+/* БЛОК ПРЕИМУЩЕСТВА */
+.preferences {}
+
+.preference {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  border-left: 2px solid var(--color-theme);
+}
+
+@media (min-width: 576px) {
+  .preference-row {
+    row-gap: var(--size-large);
+  }
+}
+
+@media (max-width: 575px) {
+  .preference {
+    padding-left: 2rem;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+  }
+}
+
+
+/* БЛОК КЕЙСЫ */
+.service-cases {
+  background-color: var(--color-gray);
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+}
+
+@media (max-width: 575px) {
+  .service-cases {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .service-cases__wrap {
+    margin-bottom: -47px;
+  }
+}
+
+.service-cases__title {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 575px) {
+  .service-cases__title {
+    margin-bottom: 28px;
+  }
+
+}
+
+.service-cases__right {
+  grid-column: span 2;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .service-cases__right {
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .service-cases__right {
+    padding: 0px;
+  }
+}
+
+.case {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem;
+  background-color: #FFF;
+  border: 1px solid #D9D9D9;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 991px) {
+  .case {
+    padding-bottom: 15rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .case {
+    flex-direction: column;
+    padding-bottom: 11rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .case {
+    padding: 2rem;
+    padding-bottom: 10.7rem;
+    gap: 3.5rem;
+  }
+}
+
+.case__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6.9rem;
+}
+
+@media (min-width: 768px) {
+  .case__text-content {
+    width: 83%;
+  }
+}
+
+@media (max-width: 768px) {
+  .case__text-content {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .case__text-content {
+    gap: 3.5rem;
+  }
+}
+
+.case__title {
+  margin-bottom: 0;
+}
+
+.case__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.case__link:after {
+  content: "";
+  margin-left: 4px;
+  width: 13px;
+  height: 14px;
+  background-image: url(../../assets/images/icons/icon-link.svg);
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.case__texts {
+  max-width: 560px;
+}
+
+.case__text-content p:first-child {
+  margin-top: 0;
+}
+
+.case__text-content p:last-child {
+  margin-bottom: 0;
+}
+
+.case__img-content {
+  display: flex;
+  align-items: center;
+}
+
+.case__images {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.case__images img {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.11);
+}
+
+@media (min-width: 768px) {
+  .case__img-content {
+    width: 58.4%;
+  }
+}
+
+@media (max-width: 991px) {
+  .case__img-content {
+    width: 76.4%;
+  }
+}
+
+@media (max-width: 767px) {
+  .case__img-content {
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+  }
+
+  .case__img-content * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .case__img-content {
+    gap: 3.5rem;
+  }
+}
+
+.case .btn {
+  font-size: var(--fz-l);
+  padding: 1.4rem 2.8rem;
+}
+
+@media (max-width: 767px) {
+  .case .btn {
+    width: 100%;
+  }
+}
+
+.service-cases__swiper-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 120px);
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .service-cases__swiper-buttons {
+    width: 100%;
+  }
+}
+
+.service-cases__swiper-buttons [class*=swiper-button-] {
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+  .service-cases__swiper-buttons {
+    position: relative;
+    top: -48px;
+    left: auto;
+    justify-content: center;
+    transform: translateY(-3rem);
+  }
+
+  .service-cases__swiper-buttons [class*=swiper-btn] {
+    color: var(--color-theme);
+    border-color: var(--color-theme);
+    background-color: transparent;
+  }
+
+  .service-cases__swiper-buttons [class*=swiper-btn]:hover {
+    color: #FFF;
+    background-color: var(--color-theme);
+  }
+}
+
+@media (max-width: 575px) {
+  .service-cases__swiper-buttons {
+    transform: translateY(-2rem);
+  }
+}
+
+
+/* ТАРИФНЫЕ ПЛАНЫ */
+.tariff-plans {}
+
+.tariff-plans__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5rem;
+}
+
+@media (max-width: 991px) {
+  .tariff-plans__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .tariff-plans__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .tariff-plans__cards {
+    gap: 4rem;
+  }
+}
+
+.tariff-plans__card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #FFF;
+  border-radius: 1.4rem;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+}
+
+.tariff-plans__card header {
+  font-family: "Unbounded";
+}
+
+.tariff-plans__card header h3 {
+  font-size: 2.6rem;
+  margin-bottom: 0rem;
+}
+
+.tariff-plans__card-price {
+  font-size: 2.6rem;
+}
+
+.tariff-plans__card-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.tariff-plans__card-options .not-included {
+  color: var(--color-border);
+}
+
+
+/* СПИСОК УСЛУГ */
+.services-list {}
+
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+.service p:first-of-type {
+  margin-top: 0;
+}
+
+.service img {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.service__btn-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  gap: 2.4rem;
+  padding-top: 3.8rem;
+}
+
+@media (max-width: 575px) {
+  .service__btn-wrap {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .service__btn-wrap {
+    gap: 1.6rem;
+  }
+}
+
+.service__price {
+  font-size: var(--fz-l);
+  font-weight: 500;
+  color: var(--color-title);
+}
+
+
+.services__link {}
+
+@media (max-width: 430px) {
+  .services__link {
+    margin-top: var(--size-small);
+  }
+}
+
+
+/* БЛОК С ФОРМОЙ */
+.form-block {
+  padding-bottom: 0rem;
+}
+
+.form-block__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-small);
+}
+
+@media (max-width: 575px) {
+  .form-block__inner {
+    gap: var(--size-small-plus);
+  }
+}
+
+.form-block__top {
+  padding: 4rem;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 991) {
+  .form-block__top {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-block__top {
+    padding: 2rem;
+  }
+}
+
+.form-block__top-texts {
+  gap: 3.5rem;
+}
+
+@media (max-width: 575px) {
+  .form-block__top-texts {
+    gap: 3rem;
+  }
+}
+
+.form-block__top-texts .h2 {
+  max-width: 589px;
+  color: #FFF;
+}
+
+.form-block__top-texts p {
+  max-width: 760px;
+}
+
+.form-block__top-price {
+  background-color: #FFF;
+  color: var(--color-title);
+  padding: 1rem 2rem;
+  margin-bottom: 0rem;
+  border-radius: 0.8rem;
+}
+
+.form-block__main {
+  padding: 4rem;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 991) {
+  .form-block__main {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-block__main {
+    padding: 2rem;
+  }
+}
+
+.form-block__main-header {
+  gap: 5rem;
+}
+
+@media (max-width: 767px) {
+  .form-block__main-header {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-block__main-header {
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.form-block__main-header p {
+  max-width: 459px;
+}
+
+.form-block__main form button[type="submit"] {
+  max-width: 370px;
+}
+
+@media (max-width: 767px) {
+  .form-block__main form button[type="submit"] {
+    max-width: none;
+  }
+}

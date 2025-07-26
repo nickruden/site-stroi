@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>СайтСтрой</title>
+
+
+    <!-- БИБЛИОТЕКИ -->
+    <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+
+
+    <!-- ОБЩИЕ СТИЛИ -->
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+
+    <link rel="stylesheet" href="../styles/UI/button.css">
+    <link rel="stylesheet" href="../styles/UI/checkbox.css">
+
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/form.css">
+    <link rel="stylesheet" href="../styles/components/modal.css">
+    <link rel="stylesheet" href="../styles/components/my-accordion.css">
+
+    <link rel="stylesheet" href="../styles/components/sections/how-work.css">
+    <link rel="stylesheet" href="../styles/components/sections/FAQ.css">
+
+
+    <!-- СТИЛИ ДЛЯ СТРАНИЦЫ -->
+    <link rel="stylesheet" href="../styles/pages/service-page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="my-container">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="../index.html" class="logo">
+                        <div class="logo__name">Сайт<span class="colored">Строй</span></div>
+                        <div class="logo__text">Вебстудия полного цикла</div>
+                    </a>
+                </div>
+                <div class="col-auto me-auto" style="align-items: initial;">
+                    <div class="city">
+                        <button class="city__current">г. Краснодар</button>
+                        <div class="city__wrap">
+                            <ul class="city__list font-medium">
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#">Санкт-Петербург</a></li>
+                            </ul>
+                            <ul class="city__list two-cols">
+                                <li><a href="#">Краснодар</a></li>
+                                <li><a href="#">Новосибирск</a></li>
+                                <li><a href="#">Сочи</a></li>
+                                <li><a href="#">Владивосток</a></li>
+                                <li><a href="#">Казань</a></li>
+                                <li><a href="#">Самара</a></li>
+                                <li><a href="#">Екатеринбург</a></li>
+                                <li><a href="#">Ростов-на-Дону</a></li>
+                                <li><a href="#">Нижний Новгород</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-lg-flex" style="align-items: initial;">
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <span>Услуги</span>
+                                <div class="submenu">
+                                    <div class="submenu__ul">
+                                        <div>
+                                            <a href="#" class="submenu__title">Услуги</a>
+                                            <ul class="two-cols">
+                                                <li><a href="#">Реклама и продвижение</a></li>
+                                                <li><a href="#">Контекстная реклама</a></li>
+                                                <li><a href="#">Аудит сайта</a></li>
+                                                <li><a href="#">Создание сайта</a></li>
+                                                <li><a href="#">Веб аналитика</a></li>
+                                                <li><a href="#">Техническая поддержка</a></li>
+                                                <li><a href="#">Управление репутацией</a></li>
+                                                <li><a href="#">Мировое продвижение</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="submenu__title">Сопровождение сайтов</a>
+                                            <ul>
+                                                <li><a href="#">Наполнение сайта контентом</a></li>
+                                                <li><a href="#">Поддержка и развитие сайтов</a></li>
+                                                <li><a href="#">Доработка сайтов</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="promo">
+                                            <span class="promo__tag">Акции</span>
+                                            <p class="promo__title">Актуальные предложения месяца</p>
+                                            <a href="#" class="btn promo__btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Купить</span>
+                                <div class="submenu">
+                                    <div class="submenu__ul">
+                                        <div>
+                                            <a href="#" class="submenu__title">Купить</a>
+                                            <ul>
+                                                <li><a href="#">Готовые сайты</a></li>
+                                                <li><a href="#">Интернет-магазин</a></li>
+                                                <li><a href="#">Одностраничный сайт</a></li>
+                                                <li><a href="#">Корпоративный сайт</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="promo">
+                                            <span class="promo__tag">Акции</span>
+                                            <p class="promo__title">Получите скидку 5&nbsp;000&nbsp;₽ на&nbsp;разработку
+                                                сайта</p>
+                                            <a href="#" class="btn promo__btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Полезное</span>
+                                <div class="submenu">
+                                    <div class="submenu__ul">
+                                        <div>
+                                            <a href="#" class="submenu__title">Полезное</a>
+                                            <ul>
+                                                <li><a href="#">Акции и бонусы</a></li>
+                                                <li><a href="#">FAQ</a></li>
+                                                <li><a href="#">Статьи</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="submenu__title">Кейсы</a>
+                                            <ul>
+                                                <li><a href="#">Сайты</a></li>
+                                                <li><a href="#">Реклама и продвижение</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="submenu__title">Компания</a>
+                                            <ul>
+                                                <li><a href="#">О нас</a></li>
+                                                <li><a href="#">Документы</a></li>
+                                                <li><a href="#">Контакты</a></li>
+                                                <li><a href="#">Реквизиты</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="promo">
+                                            <span class="promo__tag">Акции</span>
+                                            <p class="promo__title">Читайте полезные статьи по&nbsp;продвижению сайтов
+                                            </p>
+                                            <a href="#" class="btn promo__btn">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-auto d-none d-md-flex ms-sm-auto">
+                    <div class="header__phones">
+                        <a href="tel:" class="phone">+7 999 633 33 28</a>
+                    </div>
+                </div>
+                <div class="col-auto d-none d-sm-flex">
+                    <div class="header__btns">
+                        <button class="button-search"></button>
+                        <ul class="soc-links">
+                            <li>
+                                <a href="#" class="soc-links__tg" alt="Telegram"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="button-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="mob-menu">
+                <div class="header__btns">
+                    <button class="button-search"></button>
+                </div>
+                <ul class="mob-menu__nav">
+                    <li>
+                        <div class="my-accordion-header active">Услуги</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Реклама и продвижение</a></li>
+                                <li><a href="#">Контекстная реклама</a></li>
+                                <li><a href="#">Аудит сайта</a></li>
+                                <li><a href="#">Создание сайта</a></li>
+                                <li><a href="#">Веб аналитика</a></li>
+                                <li><a href="#">Техническая поддержка</a></li>
+                                <li><a href="#">Управление репутацией</a></li>
+                                <li><a href="#">Мировое продвижение</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Сопровождение сайтов</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Наполнение сайта контентом</a></li>
+                                <li><a href="#">Поддержка и развитие сайтов</a></li>
+                                <li><a href="#">Доработка сайтов</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Купить</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Готовые сайты</a></li>
+                                <li><a href="#">Интернет-магазин</a></li>
+                                <li><a href="#">Одностраничный сайт</a></li>
+                                <li><a href="#">Корпоративный сайт</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Полезное</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Акции и бонусы</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Кейсы</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Сайты</a></li>
+                                <li><a href="#">Реклама и продвижение</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Компания</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Реквизиты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a href="tel:" class="phone">+7 999 633 33 28</a>
+                </div>
+                <ul class="soc-links">
+                    <li>
+                        <a href="#" class="soc-links__tg" alt="Telegram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="intro">
+            <div class="my-container py-large">
+                <div class="flex flex-column gap-6 intro__inner">
+                    <div class="intro__texts">
+                        <h1><span class="colored">Настройка</span> Яндекс Директа <span class="colored">под ключ</span>
+                        </h1>
+                        <div class="intro__text">
+                            <p>Оставьте заявку и мы бесплатно <br> проведем аудит вашего сайта</p>
+                        </div>
+                    </div>
+                    <img src="../assets/images/pages/service-page/intro/block-img.png" alt="" class="into__image">
+                    <div class="flex flex-column intro__buttons mt-auto">
+                        <div class="intro__btn-wrap">
+                            <a class="btn btn--theme btn--icon-click" href="#order">Заказать Яндекс Директ</a>
+                            <span class="nowrap">от 20 000₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-large service-info">
+            <div class="my-container">
+                <div class="service-info__inner">
+                    <div class="flex flex-column service-info__text-content">
+                        <h3>Что такое контектная реклама и зачем она нужна вашему бизнесу?</h3>
+                        <p class="fz-medium">Контекстная реклама - это форма онлайн-рекламы, которая отображается
+                            пользователям в зависимости от контекста их текущей деятельности в интернете.</p>
+                    </div>
+                    <div class="service-info__img-wrap">
+                        <img src="../assets/images/pages/service-page/service-info/block-image.jpg" alt=""
+                            class="service-info__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-large preferences">
+            <div class="my-container">
+                <h2 class="mb-large">Преимущества <span class="colored">Яндекс Директа</span></h2>
+                <div class="preference-row grid grid-cols-3 gap-4 grid-auto-height">
+                    <div class="preference">
+                        <h3>Широкий охват</h3>
+                        <span>Реклама не только в поисковой выдаче Яндекса, но и на тысячах сайтов-партнеров РСЯ</span>
+                    </div>
+                    <div class="preference">
+                        <h3>Точный таргетинг</h3>
+                        <span>Использование инструментов, позволяющих показывать рекламу целевым клиентам</span>
+                    </div>
+                    <div class="preference">
+                        <h3>Управление бюджетом</h3>
+                        <span>Яндекс Директ позволяет полностью контролировать свои рекламные кампании</span>
+                    </div>
+                    <div class="preference">
+                        <h3>Форматы объявлений</h3>
+                        <span>Различные форматы объявлений, позволяющие максимально эффективно донести информацию до
+                            ЦА</span>
+                    </div>
+                    <div class="preference">
+                        <h3>Подробная аналитика</h3>
+                        <span>Подробная статистика о эффективности ваших рекламных кампаний</span>
+                    </div>
+                    <div class="preference">
+                        <h3>Оптимизация</h3>
+                        <span>Инструменты для автоматизации, экономии времени и улучшении результатов</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-cases">
+            <div class="my-container">
+                <div class="service-cases__wrap">
+                    <h2 class="service-cases__title">Кейсы</h2>
+                    <div class="service-cases__right">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="case">
+                                        <div class="case__text-content">
+                                            <header>
+                                                <h3 class="h3 case__title">ТатКрафт</h3>
+                                                <a href="https://www.promo.tatkraft.ru"
+                                                    class="case__link">promo.tatkraft.ru</a>
+                                            </header>
+                                            <div class="case__texts">
+                                                <p>Был проведен аудит рекламных компаний в Яндексе и Директе. Исправили
+                                                    ошибки, переписали объявления, добавили новые креативы, переделали
+                                                    первый экран лендинга, более точно настроили геотаргетинг. добавили
+                                                    новый канал продвижения банер на поиске в Яндексе.</p>
+                                            </div>
+                                            <div class="d-none d-md-block">
+                                                <a href="#" class="btn btn--theme">Подробнее о кейсе</a>
+                                            </div>
+                                        </div>
+                                        <div class="case__img-content">
+                                            <div class="case__images">
+                                                <img src="../assets/images/pages/service-page/service-cases/slide-img.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="d-md-none">
+                                                <a href="#" class="btn btn--theme">Подробнее о кейсе</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="case">
+                                        <div class="case__text-content">
+                                            <header>
+                                                <h3 class="h3 case__title">ТатКрафт</h3>
+                                                <a href="https://www.promo.tatkraft.ru"
+                                                    class="case__link">promo.tatkraft.ru</a>
+                                            </header>
+                                            <div class="case__texts">
+                                                <p>Был проведен аудит рекламных компаний в Яндексе и Директе. Исправили
+                                                    ошибки, переписали объявления, добавили новые креативы, переделали
+                                                    первый экран лендинга, более точно настроили геотаргетинг. добавили
+                                                    новый канал продвижения банер на поиске в Яндексе.</p>
+                                            </div>
+                                            <div class="d-none d-md-block">
+                                                <a href="#" class="btn btn--theme">Подробнее о кейсе</a>
+                                            </div>
+                                        </div>
+                                        <div class="case__img-content">
+                                            <div class="case__images">
+                                                <img src="../assets/images/pages/service-page/service-cases/slide-img.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="d-md-none">
+                                                <a href="#" class="btn btn--theme">Подробнее о кейсе</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cases__swiper-buttons swiper-buttons">
+                            <div class="swiper-btn-prev"> <- </div>
+                                    <div class="swiper-btn-next"> -> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="py-large tariff-plans">
+            <div class="my-container">
+                <h2 class="mb-large"><span class="colored">Тарифные</span> планы</h2>
+                <div class="tariff-plans__cards">
+                    <div class="tariff-plans__card">
+                        <header>
+                            <h3><span class="colored">Базовый</span></h3>
+                            <div class="tariff-plans__card-price">20 000 р/мес</div>
+                        </header>
+                        <div class="tariff-plans__card-options">
+                            <p>Количество фраз: <span class="colored">500 - 3500</span></p>
+                            <p>Сроки: <span class="colored">5 - 7 рабочих дней</span></p>
+                            <p>Настройка Яндекс Директ</p>
+                            <p>Группировка слов</p>
+                            <p>Настройка целей в Яндекс Метрике</p>
+                            <p>Настройка ретаргетинга</p>
+                            <p>Добавление в объявления адреса, телефона, быстрых ссылок</p>
+                            <p>Настройка уточнений и структурированных описаний</p>
+                            <p>Настройка UTM-меток</p>
+                            <p>Настройка РСЯ</p>
+                            <p>А/Б-тестирование объявлений</p>
+                            <p>Аудит ниши и сайта</p>
+                            <p class="not-included">Анализ конкурентов</p>
+                            <p class="not-included">Настройка колтрекинга</p>
+                            <p class="not-included">Создание конверсионных графических объявлений в РСЯ</p>
+                        </div>
+                        <button class="btn btn--theme">Отправить заявку</button>
+                    </div>
+                    <div class="tariff-plans__card">
+                        <header>
+                            <h3><span class="colored">Базовый</span></h3>
+                            <div class="tariff-plans__card-price">30 000 р/мес</div>
+                        </header>
+                        <div class="tariff-plans__card-options">
+                            <p>Количество фраз: <span class="colored">500 - 3500</span></p>
+                            <p>Сроки: <span class="colored">5 - 7 рабочих дней</span></p>
+                            <p>Настройка Яндекс Директ</p>
+                            <p>Группировка слов</p>
+                            <p>Настройка целей в Яндекс Метрике</p>
+                            <p>Настройка ретаргетинга</p>
+                            <p>Добавление в объявления адреса, телефона, быстрых ссылок</p>
+                            <p>Настройка уточнений и структурированных описаний</p>
+                            <p>Настройка UTM-меток</p>
+                            <p>Настройка РСЯ</p>
+                            <p>А/Б-тестирование объявлений</p>
+                            <p>Аудит ниши и сайта</p>
+                            <p class="not-included">Анализ конкурентов</p>
+                            <p class="not-included">Настройка колтрекинга</p>
+                            <p class="not-included">Создание конверсионных графических объявлений в РСЯ</p>
+                        </div>
+                        <button class="btn btn--theme">Отправить заявку</button>
+                    </div>
+                    <div class="tariff-plans__card">
+                        <header>
+                            <h3><span class="colored">Базовый</span></h3>
+                            <div class="tariff-plans__card-price">49 000 р/мес</div>
+                        </header>
+                        <div class="tariff-plans__card-options">
+                            <p>Количество фраз: <span class="colored">500 - 3500</span></p>
+                            <p>Сроки: <span class="colored">5 - 7 рабочих дней</span></p>
+                            <p>Настройка Яндекс Директ</p>
+                            <p>Группировка слов</p>
+                            <p>Настройка целей в Яндекс Метрике</p>
+                            <p>Настройка ретаргетинга</p>
+                            <p>Добавление в объявления адреса, телефона, быстрых ссылок</p>
+                            <p>Настройка уточнений и структурированных описаний</p>
+                            <p>Настройка UTM-меток</p>
+                            <p>Настройка РСЯ</p>
+                            <p>А/Б-тестирование объявлений</p>
+                            <p>Аудит ниши и сайта</p>
+                            <p>Анализ конкурентов</p>
+                            <p>Настройка колтрекинга</p>
+                            <p>Создание конверсионных графических объявлений в РСЯ</p>
+                        </div>
+                        <button class="btn btn--theme">Отправить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list">
+            <div class="my-container">
+                <h2 class="mb-large">Список <span class="colored">услуг</span></h2>
+                <div class="service-wrap grid grid-cols-3 gap-4">
+                    <div class="service">
+                        <h3>Анализ конкурентов</h3>
+                        <p>Исследование рекламных стратегий конкурентов в Яндекс Директ с целью выявления их сильных и
+                            слабых сторон</p>
+                    </div>
+                    <div class="service">
+                        <h3>Ключевые слова и фразы</h3>
+                        <p>Поиск и анализ ключевых слов и фраз, которые наиболее точно соответствуют запросам целевой
+                            аудитории</p>
+                    </div>
+                    <div class="service">
+                        <h3>Настройка ставок</h3>
+                        <p>Определение оптимальных ставок для ключевых слов и фраз, для обеспечения максимальную
+                            видимость объявлений</p>
+                    </div>
+                    <div class="service">
+                        <h3>Цели и конверсии</h3>
+                        <p>Определение и настройка целей и конверсий в Яндекс.Метрике для отслеживания эффективности
+                            кампании</p>
+                    </div>
+                    <div class="service">
+                        <h3>Оптимизация</h3>
+                        <p>Тестирование различных вариантов рекламных объявлений для выявления наиболее эффективных</p>
+                    </div>
+                    <div class="service">
+                        <h3>РСЯ</h3>
+                        <p>Настройка и оптимизация рекламных кампаний в РСЯ для охвата более широкой аудитории</p>
+                    </div>
+                    <div class="service">
+                        <h3>Отчетность</h3>
+                        <p>Регулярные отчеты о результатах рекламных кампаний с подробным анализом показателей и
+                            рекомендациями по улучшению</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-large form-block">
+            <div class="my-container">
+                <div class="form-block__inner">
+                    <div class="flex flex-column gap-3 justify-between items-start flex-md-row form-block__top bg-dark">
+                        <div class="flex flex-column form-block__top-texts">
+                            <div class="h2">Стоимость <span class="colored">Яндекс Директа</span> под ключ</div>
+                            <p>Стоимость каждого проекта рассчитывается индивидуально. Список работ составляется
+                                индивидуально, исходя из состояния проекта, его задач и пожеланий заказчика.</p>
+                        </div>
+                        <div class="h3 form-block__top-price">от 20 000 руб/мес</div>
+                    </div>
+                    <div class="flex flex-column form-block__main bg-dark">
+                        <header class="flex flex-column flex-md-row mb-large form-block__main-header">
+                            <h2 class="mb-0">Готовы продвинуть свой сайт в топ?</h2>
+                            <p class="fz-medium">Мы разработаем уникальную рекламную кампанию, чтобы ваш сайт был виден
+                                максимальному числу пользователей. Привлекайте больше целевых клиентов и увеличивайте
+                                свои
+                                продажи!</p>
+                        </header>
+                        <form class="form form--horizontal form--dark" action="">
+                            <div class="form__inputs">
+                                <label class="input-wrap">
+                                    <span>Имя*</span>
+                                    <input type="text" placeholder="Иван" required>
+                                </label>
+                                <label class="input-wrap">
+                                    <span>Номер телефона*</span>
+                                    <input type="tel" placeholder="+7 (999) 999-99-99" required>
+                                </label>
+                                <label class="input-wrap">
+                                    <span>Адрес сайта*</span>
+                                    <input type="text" placeholder="www">
+                                </label>
+                            </div>
+                            <label class="agreement my-checkbox">
+                                <input class="my-checkbox__old" type="checkbox" name="agreement" id="agreement"
+                                    required>
+                                <div class="my-checkbox__new"></div>
+                                <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки
+                                        персональных
+                                        данных</a></span>
+                            </label>
+                            <button type="submit" class="btn btn--theme">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-large how-work">
+            <div class="my-container">
+                <div class="flex flex-column flex-md-row gap-4 gap-lg-0 items-start">
+                    <div class="col position-md-sticky">
+                        <h2 class="mb-0"><span class="colored">Как</span> мы работаем</h2>
+                    </div>
+                    <div class="col">
+                        <div class="steps">
+                            <div class="steps__item">
+                                <h3>Анализ целевой аудитории</h3>
+                                <p>Определение характеристик целевой аудитории, Понимание потребностей, проблем и мотивов ЦА.</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Разработка стратегии</h3>
+                                <p>Выбор типов рекламных кампаний (поиск, РСЯ, смарт-баннеры и т.д.).</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Подбор ключевых слов</h3>
+                                <p>Создание списка ключевых слов и фраз, релевантных для продукта/услуги и целевой аудитории, использование инструментов для подбора ключевых слов.</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Настройка таргетинга</h3>
+                                <p>Настройка географического, демографического таргетинга, по интересам и поведенческим факторам.</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Стратегии управления ставками</h3>
+                                <p>Выбор стратегии управления ставками (ручное управление, автоматические стратегии), определение начальных ставок для ключевых слов и фраз.</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Настройка Яндекс.Метрики и целей</h3>
+                                <p>Настройка целей в Яндекс.Метрике для отслеживания конверсий (покупки, заявки, звонки и т.д.), настройка электронной коммерции (для интернет-магазинов).</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Мониторинг и оптимизация</h3>
+                                <p>Регулярный мониторинг показателей эффективности (количество показов, кликов, CTR, CPC, конверсии, CPA, ROMI).</p>
+                            </div>
+                            <div class="steps__item">
+                                <h3>Регулярная отчетность</h3>
+                                <p>Создание и предоставление регулярных отчетов о результатах рекламной кампании, анализ отчетов и предоставление рекомендаций по улучшению результатов.</p>
+                            </div>
+                            <div>
+                                <a href="#order" class="btn btn--theme fz-l">Обсудить проект</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="FAQ py-medium bg-gray">
+            <div class="my-container">
+                <div class="flex flex-column FAQ__inner">
+                    <header class="flex items-center justify-between gap-4 mb-large">
+                        <h2 class="mb-0">Ответы на <span class="colored">часто <br> задаваемые вопросы</span></h2>
+                        <div class="flex flex-column d-none d-md-flex">
+                            <p class="fz-m mb-small-plus">Не нашли ответ на свой вопрос? Задайте его сами!</p>
+                            <button class="btn btn--theme">Задать вопрос</button>
+                        </div>
+                    </header>
+                    <div class="my-accordion FAQ__accordion">
+                        <div class="my-accordion-item">
+                            <div class="my-accordion-header active">В чем разница трафикового продвижения&nbsp;и по
+                                позициям?</div>
+                            <div class="my-accordion-content">
+                                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних
+                                    строчек поисковых
+                                    систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли.
+                                    Как правило
+                                    количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями,
+                                    исключения могут
+                                    быть
+                                    для крупных интернет-магазинов. Для каждого запроса выстраивается своя
+                                    мини-стратегия SEO-продвижения.
+                                    Работа носит эксклюзивный характер и стоит дорого.</p>
+                            </div>
+                        </div>
+                        <div class="my-accordion-item">
+                            <div class="my-accordion-header">Какие сроки достижения результата?</div>
+                            <div class="my-accordion-content">
+                                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних
+                                    строчек поисковых
+                                    систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли.
+                                    Как правило
+                                    количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями,
+                                    исключения могут
+                                    быть
+                                    для крупных интернет-магазинов. Для каждого запроса выстраивается своя
+                                    мини-стратегия SEO-продвижения.
+                                    Работа носит эксклюзивный характер и стоит дорого.</p>
+                            </div>
+                        </div>
+                        <div class="my-accordion-item">
+                            <div class="my-accordion-header">Сколько времени понадобится, чтобы продвинуть сайт на
+                                первую&nbsp;страницу в Яндексе?</div>
+                            <div class="my-accordion-content">
+                                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних
+                                    строчек поисковых
+                                    систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли.
+                                    Как правило
+                                    количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями,
+                                    исключения могут
+                                    быть
+                                    для крупных интернет-магазинов. Для каждого запроса выстраивается своя
+                                    мини-стратегия SEO-продвижения.
+                                    Работа носит эксклюзивный характер и стоит дорого.</p>
+                            </div>
+                        </div>
+                        <div class="my-accordion-item">
+                            <div class="my-accordion-header">Стоит обращаться в компанию, если на сайт наложены санкции,
+                                и он
+                                отсутствует в поиске?</div>
+                            <div class="my-accordion-content">
+                                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних
+                                    строчек поисковых
+                                    систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли.
+                                    Как правило
+                                    количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями,
+                                    исключения могут
+                                    быть
+                                    для крупных интернет-магазинов. Для каждого запроса выстраивается своя
+                                    мини-стратегия SEO-продвижения.
+                                    Работа носит эксклюзивный характер и стоит дорого.</p>
+                            </div>
+                        </div>
+                        <div class="my-accordion-item">
+                            <div class="my-accordion-header">Из чего складывается оптимизация веб-сайта?</div>
+                            <div class="my-accordion-content">
+                                <p>Основная цель раскрутки по позициям состоит в достижении ключевыми словами верхних
+                                    строчек поисковых
+                                    систем. Это в свою очередь повышает имидж компании, выдвигает её в лидеры отрасли.
+                                    Как правило
+                                    количество продвигаемых фраз измеряется десятками, максимум - несколькими сотнями,
+                                    исключения могут
+                                    быть
+                                    для крупных интернет-магазинов. Для каждого запроса выстраивается своя
+                                    мини-стратегия SEO-продвижения.
+                                    Работа носит эксклюзивный характер и стоит дорого.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-column d-md-none">
+                        <p class="fz-m mb-small-plus">Не нашли ответ на свой вопрос? Задайте его сами!</p>
+                        <button class="btn btn--theme">Задать вопрос</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+
+    </footer>
+
+
+    <div class="modal" id="order">
+        <h2>Оставить <span class="colored">заявку</span></h2>
+        <p>Менеджер свяжется с вами в ближайшее время и задаст уточняющие вопросы по заявке</p>
+        <form class="form form--vertical" action="">
+            <label>
+                <span>Имя*</span>
+                <input type="text" placeholder="Иван" required>
+            </label>
+            <label>
+                <span>Номер телефона*</span>
+                <input type="tel" placeholder="+7 (999) 999-99-99" required>
+            </label>
+            <label>
+                <span>Адрес сайта*</span>
+                <input type="text" placeholder="www">
+            </label>
+            <label class="agreement">
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <span>Вы соглашаетесь <a href="/privacy">с условиями обработки персональных данных</a></span>
+            </label>
+            <button type="submit" class="btn btn--theme">Отправить заявку</button>
+        </form>
+    </div>
+
+
+    <!-- БИБЛИОТЕКИ -->
+    <script src="../assets/libs/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../assets/libs/imask/imask.js"></script>
+    <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- СКРИПТЫ -->
+    <script src="../assets/scripts/scripts.js"></script>
+</body>
+
+</html>
