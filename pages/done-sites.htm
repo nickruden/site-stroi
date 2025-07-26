@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>СайтСтрой</title>
+
+
+    <!-- БИБЛИОТЕКИ -->
+    <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+
+
+    <!-- ОБЩИЕ СТИЛИ -->
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+
+    <link rel="stylesheet" href="../styles/UI/button.css">
+    <link rel="stylesheet" href="../styles/UI/checkbox.css">
+
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
+    <link rel="stylesheet" href="../styles/components/form.css">
+    <link rel="stylesheet" href="../styles/components/modal.css">
+    <link rel="stylesheet" href="../styles/components/my-accordion.css">
+
+    <link rel="stylesheet" href="../styles/components/sections/how-work.css">
+    <link rel="stylesheet" href="../styles/components/sections/FAQ.css">
+
+
+    <!-- СТИЛИ ДЛЯ СТРАНИЦЫ -->
+    <link rel="stylesheet" href="../styles/pages/done-sites.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="my-container">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="../index.html" class="logo">
+                        <div class="logo__name">Сайт<span class="colored">Строй</span></div>
+                        <div class="logo__text">Вебстудия полного цикла</div>
+                    </a>
+                </div>
+                <div class="col-auto me-auto" style="align-items: initial;">
+                    <div class="city">
+                        <button class="city__current">г. Краснодар</button>
+                        <div class="city__wrap">
+                            <ul class="city__list font-medium">
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#">Санкт-Петербург</a></li>
+                            </ul>
+                            <ul class="city__list two-cols">
+                                <li><a href="#">Краснодар</a></li>
+                                <li><a href="#">Новосибирск</a></li>
+                                <li><a href="#">Сочи</a></li>
+                                <li><a href="#">Владивосток</a></li>
+                                <li><a href="#">Казань</a></li>
+                                <li><a href="#">Самара</a></li>
+                                <li><a href="#">Екатеринбург</a></li>
+                                <li><a href="#">Ростов-на-Дону</a></li>
+                                <li><a href="#">Нижний Новгород</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-lg-flex" style="align-items: initial;">
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <span>Услуги</span>
+                                <div class="submenu">
+                                    <div class="submenu__ul">
+                                        <div>
+                                            <a href="#" class="submenu__title">Услуги</a>
+                                            <ul class="two-cols">
+                                                <li><a href="./service-page.html">Реклама и продвижение</a></li>
+                                                <li><a href="./service-page.html">Контекстная реклама</a></li>
+                                                <li><a href="./service-page.html">Аудит сайта</a></li>
+                                                <li><a href="./service-page.html">Создание сайта</a></li>
+                                                <li><a href="./service-page.html">Веб аналитика</a></li>
+                                                <li><a href="./service-page.html">Техническая поддержка</a></li>
+                                                <li><a href="./service-page.html">Управление репутацией</a></li>
+                                                <li><a href="./service-page.html">Мировое продвижение</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="submenu__title">Сопровождение сайтов</a>
+                                            <ul>
+                                                <li><a href="#">Наполнение сайта контентом</a></li>
+                                                <li><a href="#">Поддержка и развитие сайтов</a></li>
+                                                <li><a href="#">Доработка сайтов</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="promo">
+                                            <span class="promo__tag">Акции</span>
+                                            <p class="promo__title">Актуальные предложения месяца</p>
+                                            <a href="#" class="btn promo__btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Купить</span>
+                                <div class="submenu">
+                                    <div class="submenu__ul">
+                                        <div>
+                                            <a href="#" class="submenu__title">Купить</a>
+                                            <ul>
+                                                <li><a href="#">Готовые сайты</a></li>
+                                                <li><a href="#">Интернет-магазин</a></li>
+                                                <li><a href="#">Одностраничный сайт</a></li>
+                                                <li><a href="#">Корпоративный сайт</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="promo">
+                                            <span class="promo__tag">Акции</span>
+                                            <p class="promo__title">Получите скидку 5&nbsp;000&nbsp;₽ на&nbsp;разработку
+                                                сайта</p>
+                                            <a href="#" class="btn promo__btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Полезное</span>
+                                <div class="submenu">
+                                    <div class="submenu__ul">
+                                        <div>
+                                            <a href="#" class="submenu__title">Полезное</a>
+                                            <ul>
+                                                <li><a href="#">Акции и бонусы</a></li>
+                                                <li><a href="#">FAQ</a></li>
+                                                <li><a href="#">Статьи</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="submenu__title">Кейсы</a>
+                                            <ul>
+                                                <li><a href="#">Сайты</a></li>
+                                                <li><a href="#">Реклама и продвижение</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="submenu__title">Компания</a>
+                                            <ul>
+                                                <li><a href="#">О нас</a></li>
+                                                <li><a href="#">Документы</a></li>
+                                                <li><a href="#">Контакты</a></li>
+                                                <li><a href="#">Реквизиты</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="promo">
+                                            <span class="promo__tag">Акции</span>
+                                            <p class="promo__title">Читайте полезные статьи по&nbsp;продвижению сайтов
+                                            </p>
+                                            <a href="#" class="btn promo__btn">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-auto d-none d-md-flex ms-sm-auto">
+                    <div class="header__phones">
+                        <a href="tel:" class="phone">+7 999 633 33 28</a>
+                    </div>
+                </div>
+                <div class="col-auto d-none d-sm-flex">
+                    <div class="header__btns">
+                        <button class="button-search"></button>
+                        <ul class="soc-links">
+                            <li>
+                                <a href="#" class="soc-links__tg" alt="Telegram"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="button-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="mob-menu">
+                <div class="header__btns">
+                    <button class="button-search"></button>
+                </div>
+                <ul class="mob-menu__nav">
+                    <li>
+                        <div class="my-accordion-header active">Услуги</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Реклама и продвижение</a></li>
+                                <li><a href="#">Контекстная реклама</a></li>
+                                <li><a href="#">Аудит сайта</a></li>
+                                <li><a href="#">Создание сайта</a></li>
+                                <li><a href="#">Веб аналитика</a></li>
+                                <li><a href="#">Техническая поддержка</a></li>
+                                <li><a href="#">Управление репутацией</a></li>
+                                <li><a href="#">Мировое продвижение</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Сопровождение сайтов</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Наполнение сайта контентом</a></li>
+                                <li><a href="#">Поддержка и развитие сайтов</a></li>
+                                <li><a href="#">Доработка сайтов</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Купить</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Готовые сайты</a></li>
+                                <li><a href="#">Интернет-магазин</a></li>
+                                <li><a href="#">Одностраничный сайт</a></li>
+                                <li><a href="#">Корпоративный сайт</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Полезное</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Акции и бонусы</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Кейсы</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">Сайты</a></li>
+                                <li><a href="#">Реклама и продвижение</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="my-accordion-header">Компания</div>
+                        <div class="my-accordion-content">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Реквизиты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a href="tel:" class="phone">+7 999 633 33 28</a>
+                </div>
+                <ul class="soc-links">
+                    <li>
+                        <a href="#" class="soc-links__tg" alt="Telegram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="templates overflow-hidden">
+            <div class="py-small my-container">
+                <header class="flex flex-column gap-3 mb-large templates__header">
+                    <h2>Готовые сайты на Tilda</h2>
+                    <div class="flex tabs">
+                        <button class="btn btn--tab active">Все</button>
+                        <button class="btn btn--tab">Лендинги</button>
+                        <button class="btn btn--tab">Корпоративные сайты</button>
+                        <button class="btn btn--tab">Интернет-магазины</button>
+                        <button class="btn btn--tab">Сайт-визитка</button>
+                    </div>
+                </header>
+                <div class="templates__slider">
+                    <div class="swiper align-stretch">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide__inner">
+                                    <a href="" class="slide__img-wrap">
+                                        <img src="../assets/images/pages/done-sites/templates/slide-img-1.jpg" alt="">
+                                    </a>
+                                    <div class="flex flex-column slide__content">
+                                        <div class="flex flex-column slide__texts">
+                                            <a href="" class="fz-l font-medium">Интернет-магазин</a>
+                                            <p class="fz-m">Шаблон разработан для создания стильного и функционального
+                                                онлайн-магазина</p>
+                                        </div>
+                                        <div class="flex justify-between gap-6 slide__bottom">
+                                            <div class="slide__price fz-l font-medium">от 65 000 руб</div>
+                                            <a href="" class="fz-medium slide__bottom-link">-></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__inner">
+                                    <a href="" class="slide__img-wrap">
+                                        <img src="../assets/images/pages/done-sites/templates/slide-img-1.jpg" alt="">
+                                    </a>
+                                    <div class="flex flex-column slide__content">
+                                        <div class="flex flex-column slide__texts">
+                                            <a href="" class="fz-l font-medium">Интернет-магазин</a>
+                                            <p class="fz-m">Шаблон разработан для создания стильного и функционального
+                                                онлайн-магазина</p>
+                                        </div>
+                                        <div class="flex justify-between gap-6 slide__bottom">
+                                            <div class="slide__price fz-l font-medium">от 65 000 руб</div>
+                                            <a href="" class="fz-medium slide__bottom-link">-></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__inner">
+                                    <a href="" class="slide__img-wrap">
+                                        <img src="../assets/images/pages/done-sites/templates/slide-img-1.jpg" alt="">
+                                    </a>
+                                    <div class="flex flex-column slide__content">
+                                        <div class="flex flex-column slide__texts">
+                                            <a href="" class="fz-l font-medium">Интернет-магазин</a>
+                                            <p class="fz-m">Шаблон разработан для создания стильного и функционального
+                                                онлайн-магазина</p>
+                                        </div>
+                                        <div class="flex justify-between gap-6 slide__bottom">
+                                            <div class="slide__price fz-l font-medium">от 65 000 руб</div>
+                                            <a href="" class="fz-medium slide__bottom-link">-></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__inner">
+                                    <a href="" class="slide__img-wrap">
+                                        <img src="../assets/images/pages/service-page/service-cases/slide-img.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="flex flex-column slide__content">
+                                        <div class="flex flex-column slide__texts">
+                                            <a href="" class="fz-l font-medium">Интернет-магазин</a>
+                                            <p class="fz-m">Шаблон разработан для создания стильного и функционального
+                                                онлайн-магазина</p>
+                                        </div>
+                                        <div class="flex justify-between gap-6 slide__bottom">
+                                            <div class="slide__price fz-l font-medium">от 65 000 руб</div>
+                                            <a href="" class="fz-medium slide__bottom-link">-></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__inner">
+                                    <a href="" class="slide__img-wrap">
+                                        <img src="../assets/images/pages/service-page/service-cases/slide-img.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="flex flex-column slide__content">
+                                        <div class="flex flex-column slide__texts">
+                                            <a href="" class="fz-l font-medium">Интернет-магазин</a>
+                                            <p class="fz-m">Шаблон разработан для создания стильного и функционального
+                                                онлайн-магазина</p>
+                                        </div>
+                                        <div class="flex justify-between gap-6 slide__bottom">
+                                            <div class="slide__price fz-l font-medium">от 65 000 руб</div>
+                                            <a href="" class="fz-medium slide__bottom-link">-></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__inner">
+                                    <a href="" class="slide__img-wrap">
+                                        <img src="../assets/images/pages/service-page/service-cases/slide-img.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="flex flex-column slide__content">
+                                        <div class="flex flex-column slide__texts">
+                                            <a href="" class="fz-l font-medium">Интернет-магазин</a>
+                                            <p class="fz-m">Шаблон разработан для создания стильного и функционального
+                                                онлайн-магазина</p>
+                                        </div>
+                                        <div class="flex justify-between gap-6 slide__bottom">
+                                            <div class="slide__price fz-l font-medium">от 65 000 руб</div>
+                                            <a href="" class="fz-medium slide__bottom-link">-></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="py-small description-texts">
+            <div class="my-container">
+                <div class="flex flex-column gap-4">
+                    <div class="row flex flex-column">
+                        <h3>Тематики отраслевых&nbsp;сайтов</h3>
+                        <div class="flex flex-column description-texts__content">
+                            <p>Выбирайте подходящее готовое решение под сферу своего бизнеса. Вы&nbsp;можете быстро
+                                запустить сайт для следующих тематик:</p>
+                            <ul>
+                                <li>металлопрокат;</li>
+                                <li>строительство;</li>
+                                <li>медицина;</li>
+                                <li>автомобильная отрасль;</li>
+                                <li>образование;</li>
+                                <li>туризм.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row flex flex-column">
+                        <h3>Элегантный и современный дизайн</h3>
+                        <div class="flex flex-column description-texts__content">
+                            <p>Шаблон выполнен в стильном дизайне, который подчеркивает красоту цветов и создает
+                                привлекательную атмосферу для покупателей. Используются актуальные тренды веб-дизайна,
+                                чтобы ваш сайт выглядел современно и профессионально.</p>
+                        </div>
+                    </div>
+                    <div class="row flex flex-column">
+                        <h3>Простота настройки и&nbsp;управления</h3>
+                        <div class="flex flex-column description-texts__content">
+                            <p>Шаблон легко настраивается и управляется даже без специальных знаний программирования.
+                                Интуитивно понятный интерфейс позволит вам быстро добавлять товары, редактировать
+                                описания, управлять заказами и настраивать дизайн.</p>
+                        </div>
+                    </div>
+                    <div class="row flex flex-column">
+                        <h3>Экономия времени и денег</h3>
+                        <div class="flex flex-column description-texts__content">
+                            <p>Вам не нужно разрабатывать сайт с нуля, что значительно сокращает время и стоимость
+                                запуска вашего сайта.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer bg-dark">
+        <div class="my-container flex flex-column gap-6">
+            <div class="footer__top flex flex-column gap-6 flex-md-row">
+                <a href="../index.html" class="logo white-logo">
+                    <div class="logo__name">Сайт<span class="colored">Строй</span></div>
+                    <div class="logo__text">Вебстудия полного цикла</div>
+                </a>
+                <div class="city">
+                    <button class="city__current">г. Краснодар</button>
+                    <div class="city__wrap">
+                        <ul class="city__list font-medium">
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Санкт-Петербург</a></li>
+                        </ul>
+                        <ul class="city__list two-cols">
+                            <li><a href="#">Краснодар</a></li>
+                            <li><a href="#">Новосибирск</a></li>
+                            <li><a href="#">Сочи</a></li>
+                            <li><a href="#">Владивосток</a></li>
+                            <li><a href="#">Казань</a></li>
+                            <li><a href="#">Самара</a></li>
+                            <li><a href="#">Екатеринбург</a></li>
+                            <li><a href="#">Ростов-на-Дону</a></li>
+                            <li><a href="#">Нижний Новгород</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <nav class="nav flex flex-column justify-between items-start gap-5 flex-sm-row">
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Услуги</span>
+                        <li class="fz-s"><a href="./service-page.html">Реклама и продвижение</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Контекстная реклама</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Аудит сайта</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Создание сайта</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Веб аналитика</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Техническая поддержка</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Управление репутацией</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Мировое продвижение</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Купить</span>
+                        <li class="fz-s" style="color: #FFF;"><a href="#">Готовые сайты</a></li>
+                        <li class="fz-s"><a href="#">Интернет-магазин</a></li>
+                        <li class="fz-s"><a href="#">Одностраничный сайт</a></li>
+                        <li class="fz-s"><a href="#">Корпоративный сайт</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Кейсы</span>
+                        <li class="fz-s"><a href="#">Сайты</a></li>
+                        <li class="fz-s"><a href="#">Реклама и продвижение</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Компания</span>
+                        <li class="fz-s"><a href="#">О нас</a></li>
+                        <li class="fz-s"><a href="#">Документы</a></li>
+                        <li class="fz-s"><a href="#">Контакты</a></li>
+                        <li class="fz-s"><a href="#">Реквизиты</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Полезное</span>
+                        <li class="fz-s"><a href="#">Акции и бонусы</a></li>
+                        <li class="fz-s"><a href="#">FAQ</a></li>
+                        <li class="fz-s"><a href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom flex flex-column justify-between gap-5 flex-md-row">
+                <div class="fz-s footer__bottom-rights">© 2025 Все права защищены</div>
+                <div class="fz-s footer__bottom-policy"><a href="">Политика конфиденциальности</a></div>
+                <div class="fz-s footer__bottom-phone"><a href="tel:+79996333328">+7 999 633 33 28</a></div>
+                <div class="fz-s footer__bottom-socials">
+                    <ul class="soc-links">
+                        <li>
+                            <a href="#" class="soc-links__tg" alt="Telegram"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="order">
+        <h2>Оставить <span class="colored">заявку</span></h2>
+        <p>Менеджер свяжется с вами в ближайшее время и задаст уточняющие вопросы по заявке</p>
+        <form class="form form--vertical" action="">
+            <label>
+                <span>Имя*</span>
+                <input type="text" placeholder="Иван" required>
+            </label>
+            <label>
+                <span>Номер телефона*</span>
+                <input type="tel" placeholder="+7 (999) 999-99-99" required>
+            </label>
+            <label>
+                <span>Адрес сайта*</span>
+                <input type="text" placeholder="www">
+            </label>
+            <label class="agreement">
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <span>Вы соглашаетесь <a href="/privacy">с условиями обработки персональных данных</a></span>
+            </label>
+            <button type="submit" class="btn btn--theme">Отправить заявку</button>
+        </form>
+    </div>
+
+
+    <!-- БИБЛИОТЕКИ -->
+    <script src="../assets/libs/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../assets/libs/imask/imask.js"></script>
+    <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- СКРИПТЫ -->
+    <script src="../assets/scripts/scripts.js"></script>
+</body>
+
+</html>

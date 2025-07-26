@@ -52,6 +52,21 @@
     display: none;
     padding-top: 2rem;
     max-width: 870px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: var(--fz-m);
+}
+
+.my-accordion-content ul, .my-accordion-content ol {
+    padding-left: 2.5rem;
+}
+
+.my-accordion-content ul li {
+    list-style-type: disc;
+}
+.my-accordion-content ol li {
+    list-style-type: decimal;
 }
 
 @media (max-width: 1199px) {

@@ -256,6 +256,11 @@ h3,
   }
 }
 
+.py-small {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 
 /* МАРДЖИНЫ */
 .mb-0 {
@@ -485,6 +490,7 @@ h3,
 }
 
 .align-stretch .swiper-slide {
+  display: flex;
   height: auto;
 }
 

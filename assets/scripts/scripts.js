@@ -47,15 +47,22 @@ menuButton.on("click", function () {
 $(document).ready(function() {
   $(".my-accordion-header").each(function() {
     if ($(this).hasClass("active")) {
-      $(this).next(".my-accordion-content").show();
+      $(this).next(".my-accordion-content").css("display", "flex");
     } else {
-      $(this).next(".my-accordion-content").hide();
+      $(this).next(".my-accordion-content").css("display", "none");
     }
   });
 
   $(".my-accordion-header").on("click", function() {
     $(this).toggleClass("active");
-    $(this).next(".my-accordion-content").stop(true, true).slideToggle();
+    var content = $(this).next(".my-accordion-content");
+    if (content.is(":visible")) {
+      content.slideUp(function() {
+        $(this).css("display", "none");
+      });
+    } else {
+      content.css("display", "flex").hide().slideDown();
+    }
   });
 });
 
@@ -158,5 +165,26 @@ const swiper6 = new Swiper(".service-cases .swiper", {
   navigation: {
     nextEl: ".service-cases .swiper-btn-next",
     prevEl: ".service-cases .swiper-btn-prev",
+  },
+});
+
+const swiper7 = new Swiper(".templates__slider .swiper", {
+  slidesPerView: 1.19,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 2.1,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3.1,
+      spaceBetween: 40,
+      allowTouchMove: true,
+    },
+    1199: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      allowTouchMove: false,
+    },
   },
 });

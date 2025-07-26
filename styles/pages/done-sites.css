@@ -1,0 +1,124 @@
+.templates {}
+
+.templates .my-container {
+    padding-bottom: 0;
+}
+
+.templates .tabs {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+    .templates__header {
+        margin-bottom: var(--size-large);
+        gap: var(--size-small-plus);
+    }
+}
+
+.templates__slider {}
+
+.swiper {}
+
+@media (max-width: 1199px) {
+    .templates .swiper {
+        overflow: visible;
+    }
+}
+
+.swiper-wrapper {}
+
+@media (min-width: 1199px) {
+    .templates .swiper-wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+.swiper-slide {}
+
+@media (min-width: 1199px) {
+    .templates .swiper-slide {
+        margin-right: 0px !important;
+        flex: 0 1 calc(33.333% - (2 * 40px / 3));
+    }
+}
+
+.templates .slide__inner {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.templates .slide__img-wrap {
+    max-height: 250px;
+    height: auto;
+    cursor: pointer;
+}
+
+.templates .slide__img-wrap img {
+    height: 100%;
+    width: 100%;
+}
+
+.templates .slide__content {
+    padding: 2rem 2rem 1.4rem;
+    gap: 2.7rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.templates .slide__texts {
+    color: var(--color-title);
+    gap: 1.1rem;
+}
+
+.templates .slide__texts a:hover {
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.templates .slide__texts a:hover {
+    color: #aaaaaa;
+}
+
+.templates .slide__bottom {
+    color: var(--color-title);
+}
+
+.templates .slide__price {
+    margin-top: auto;
+}
+
+.templates .slide__bottom .slide__bottom-link:hover {
+    color: #aaaaaa;
+}
+
+
+/* ОПИСАТЕЛЬНЫЕ ТЕКСТЫ */
+.description-texts {}
+
+.description-texts h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+}
+
+.description-texts__content {
+    gap: 2rem;
+    font-size: var(--fz-m);
+}
+
+.description-texts__content ul,
+.description-texts__content ol {
+    padding-left: 2.5rem;
+}
+
+.description-texts__content ul li {
+    list-style-type: disc;
+}
+
+.description-texts__content ol li {
+    list-style-type: decimal;
+}

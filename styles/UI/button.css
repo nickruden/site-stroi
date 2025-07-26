@@ -24,7 +24,8 @@ button {
   line-height: 140%;
 }
 
-.btn--emptyTheme:hover, .btn--emptyTheme.active {
+.btn--emptyTheme:hover,
+.btn--emptyTheme.active {
   color: var(--color-theme);
 }
 
@@ -71,4 +72,19 @@ button {
 
 .btn--icon-click:hover:after {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAY1BMVEUAAAAgaPAgaPAdb/Ahae8fZu0hae8hau8gaO4gafAgaO4iavAgae8iau8fae4gaO8gaO8hau8gaO8hae4hafAhaO4gZ+wcaOofZPAhafAiau8gae8haO8gaO0faPAfZe0hae+NntoMAAAAIHRSTlMAIEAQ30nutKCZkDP0n3Osp4aAbWdgMCMh4NG/k39TOhxrEt8AAACqSURBVDjLzdFJEoMgFEXRjxIU7GJv+rf/VQaDiRb1ZZZKzkAG3IGvoF8QqqSgA5K9GxEOIqAQazDpgxfEKYDIniaznxqoyCdSNZIjAR1TgLlk9C1lLof5bLUbzS05kqXcaI84w6rcorn0ZCfMiqU2/pAux8uVeDUWDXHiBG83YgiJj5a5nxRWPRNobNyZoMdGRIwxsjrpB/yvDrTvAUsEHxNATCEmb+jvPAHoERHqTcBdDwAAAABJRU5ErkJggg==);
+}
+
+.btn--tab {
+  padding: 1rem 1.5rem;
+  color: var(--color-text);
+  background-color: #F7F7F7;
+  border-radius: 8px;
+  font-size: var(--fz-m);
+  line-height: 140%;
+}
+
+.btn--tab:hover,
+.btn--tab.active {
+  color: #FFF;
+  background-color: var(--color-theme);
 }
