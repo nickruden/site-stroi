@@ -12,7 +12,6 @@ window.addEventListener("scroll", () => {
   colorHeaderToWhite();
 });
 
-
 // Попап
 Fancybox.bind("[data-fancybox]", {
   compact: true,
@@ -21,7 +20,6 @@ Fancybox.bind("[data-fancybox]", {
       '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8764 18.1818L2.12132 31.9369L0 29.8155L13.7551 16.0605L9.53674e-07 2.3054L2.12132 0.184082L15.8764 13.9391L29.6315 0.184082L31.7528 2.3054L17.9977 16.0605L31.7528 29.8155L29.6315 31.9369L15.8764 18.1818Z" fill="#2169EF"/></svg></button>',
   },
 });
-
 
 // Маска ввода
 $('[type="tel"]').each(function () {
@@ -42,10 +40,9 @@ menuButton.on("click", function () {
   $("body").toggleClass("menu-active");
 });
 
-
 // Accordion
-$(document).ready(function() {
-  $(".my-accordion-header").each(function() {
+$(document).ready(function () {
+  $(".my-accordion-header").each(function () {
     if ($(this).hasClass("active")) {
       $(this).next(".my-accordion-content").css("display", "flex");
     } else {
@@ -53,11 +50,11 @@ $(document).ready(function() {
     }
   });
 
-  $(".my-accordion-header").on("click", function() {
+  $(".my-accordion-header").on("click", function () {
     $(this).toggleClass("active");
     var content = $(this).next(".my-accordion-content");
     if (content.is(":visible")) {
-      content.slideUp(function() {
+      content.slideUp(function () {
         $(this).css("display", "none");
       });
     } else {
@@ -65,7 +62,6 @@ $(document).ready(function() {
     }
   });
 });
-
 
 // Slider cases
 const swiper = new Swiper(".cases__wrap .swiper", {
@@ -187,4 +183,41 @@ const swiper7 = new Swiper(".templates__slider .swiper", {
       allowTouchMove: false,
     },
   },
+});
+
+// модальное окно
+document.addEventListener("DOMContentLoaded", function () {
+  const modalOpeners = document.querySelectorAll("[data-open-modal]");
+
+  modalOpeners.forEach((opener) => {
+    opener.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      let modalId = opener.getAttribute("data-open-modal");
+      if (modalId.startsWith("#")) modalId = modalId.slice(1);
+
+      const modal = document.getElementById(modalId);
+
+      document.body.style.overflow = "hidden";
+      modal.style.display = "flex";
+      modal.setAttribute("opened", "");
+
+      modal.addEventListener("click", function (e) {
+        if (e.target === this) {
+          this.style.display = "none";
+          modal.removeAttribute("opened");
+          document.body.style.overflow = "";
+        }
+      });
+
+      const closeButtons = modal.querySelectorAll(".close-modal-button");
+      closeButtons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          modal.style.display = "none";
+          modal.removeAttribute("opened");
+          document.body.style.overflow = "";
+        });
+      });
+    });
+  });
 });
