@@ -235,10 +235,12 @@ searchBtn.forEach(btn => {
     searchInput.focus();
     searchInput.select();
     document.body.classList = "";
+    setTimeout( () => document.querySelector(".header").classList.remove("bg-white"), 330);
   });
 });
 
 searchClose.addEventListener('click', () => {
   searchOverlay.classList.remove('active');
   searchInput.value = '';
+  colorHeaderToWhite();
 });
