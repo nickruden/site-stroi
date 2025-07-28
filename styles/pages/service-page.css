@@ -5,17 +5,25 @@
   background: url(../../assets/images/bg/intro.webp) no-repeat center/cover;
 }
 
+.intro .my-container {
+  padding-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
 @media (max-width: 991px) {
   .intro .my-container {
-    padding-top: 10rem;
     padding-bottom: 7rem;
+    gap: 10rem;
   }
 }
 
 @media (max-width: 575px) {
   .intro .my-container {
-    padding-top: 6rem;
+    padding-top: 1.5rem;
     padding-bottom: 2.2rem;
+    gap: 5.7rem;
   }
 }
 

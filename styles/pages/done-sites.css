@@ -1,7 +1,32 @@
-.templates {}
+/* Первый блок */
+.intro {
+
+}
+
+.intro .my-container {
+    padding-top: 1.8rem;
+}
+
+@media (max-width: 575px) {
+  .intro .my-container {
+    padding-top: 1.5rem;
+  }
+}
+
+
+/* Блок с примерами */
+.templates {
+}
 
 .templates .my-container {
     padding-bottom: 0;
+    padding-top: 7rem;
+}
+
+@media (max-width: 575px) {
+  .templates .my-container {
+    padding-top: 5.7rem;
+  }
 }
 
 .templates .tabs {
