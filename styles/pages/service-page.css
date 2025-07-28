@@ -390,7 +390,8 @@
 
 .case .btn {
   font-size: var(--fz-l);
-  padding: 1.4rem 2.8rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
 }
 
 @media (max-width: 767px) {
@@ -506,6 +507,11 @@
 
 .tariff-plans__card-options .not-included {
   color: var(--color-border);
+}
+
+.tariff-plans__card-button {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
 

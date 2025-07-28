@@ -18,6 +18,38 @@ button {
   box-sizing: border-box;
 }
 
+.btn-small-py {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.btn-small-plus-py {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.btn-medium-py {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .small-plus-md-py {
+    padding-top: 1.4rem !important;
+    padding-bottom: 1.4rem !important;
+  }
+}
+
+.btn-medium-plus-py {
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+}
+
+.btn-large-py {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
 .btn--emptyTheme {
   padding: 0rem;
   justify-content: flex-start;

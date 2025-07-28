@@ -271,7 +271,8 @@
 
 .case .btn {
   font-size: var(--fz-l);
-  padding: 1.3rem 2.9rem;
+  padding-right: 2.9em;
+  padding-left: 2.9em;
 }
 
 @media (max-width: 767px) {
@@ -351,6 +352,11 @@
   .services__link {
     margin-top: var(--size-small);
   }
+}
+
+.service__button {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
 
@@ -521,4 +527,9 @@
 .our-articles .slide__title {
   color: var(--color-title);
   margin-bottom: 1.5rem;
+}
+
+.our-articles__button {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }

@@ -132,6 +132,11 @@ body:not(.menu-active) .header:not(.bg-white) .button-menu span {
     gap: 1.5rem;
 }
 
+.intro__buttons .btn {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
 
 /* КАРТОЧКИ С ИНФОРМАЦИЕЙ */
 .info-items {
