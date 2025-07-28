@@ -37,6 +37,15 @@
 
 <body>
     <header class="header">
+        <div class="search-overlay">
+            <div class="my-container search__container">
+                <div class="search-line">
+                    <div class="search-line__icon"></div>
+                    <input class="search-line__input" type="text" placeholder="Введите для поиска">
+                </div>
+                <button class="search__close"></button>
+            </div>
+        </div>
         <div class="my-container">
             <div class="row">
                 <div class="col-auto">
@@ -613,7 +622,8 @@
                         <div class="steps">
                             <div class="steps__item">
                                 <h3>Анализ целевой аудитории</h3>
-                                <p>Определение характеристик целевой аудитории, Понимание потребностей, проблем и мотивов ЦА.</p>
+                                <p>Определение характеристик целевой аудитории, Понимание потребностей, проблем и
+                                    мотивов ЦА.</p>
                             </div>
                             <div class="steps__item">
                                 <h3>Разработка стратегии</h3>
@@ -621,27 +631,33 @@
                             </div>
                             <div class="steps__item">
                                 <h3>Подбор ключевых слов</h3>
-                                <p>Создание списка ключевых слов и фраз, релевантных для продукта/услуги и целевой аудитории, использование инструментов для подбора ключевых слов.</p>
+                                <p>Создание списка ключевых слов и фраз, релевантных для продукта/услуги и целевой
+                                    аудитории, использование инструментов для подбора ключевых слов.</p>
                             </div>
                             <div class="steps__item">
                                 <h3>Настройка таргетинга</h3>
-                                <p>Настройка географического, демографического таргетинга, по интересам и поведенческим факторам.</p>
+                                <p>Настройка географического, демографического таргетинга, по интересам и поведенческим
+                                    факторам.</p>
                             </div>
                             <div class="steps__item">
                                 <h3>Стратегии управления ставками</h3>
-                                <p>Выбор стратегии управления ставками (ручное управление, автоматические стратегии), определение начальных ставок для ключевых слов и фраз.</p>
+                                <p>Выбор стратегии управления ставками (ручное управление, автоматические стратегии),
+                                    определение начальных ставок для ключевых слов и фраз.</p>
                             </div>
                             <div class="steps__item">
                                 <h3>Настройка Яндекс.Метрики и целей</h3>
-                                <p>Настройка целей в Яндекс.Метрике для отслеживания конверсий (покупки, заявки, звонки и т.д.), настройка электронной коммерции (для интернет-магазинов).</p>
+                                <p>Настройка целей в Яндекс.Метрике для отслеживания конверсий (покупки, заявки, звонки
+                                    и т.д.), настройка электронной коммерции (для интернет-магазинов).</p>
                             </div>
                             <div class="steps__item">
                                 <h3>Мониторинг и оптимизация</h3>
-                                <p>Регулярный мониторинг показателей эффективности (количество показов, кликов, CTR, CPC, конверсии, CPA, ROMI).</p>
+                                <p>Регулярный мониторинг показателей эффективности (количество показов, кликов, CTR,
+                                    CPC, конверсии, CPA, ROMI).</p>
                             </div>
                             <div class="steps__item">
                                 <h3>Регулярная отчетность</h3>
-                                <p>Создание и предоставление регулярных отчетов о результатах рекламной кампании, анализ отчетов и предоставление рекомендаций по улучшению результатов.</p>
+                                <p>Создание и предоставление регулярных отчетов о результатах рекламной кампании, анализ
+                                    отчетов и предоставление рекомендаций по улучшению результатов.</p>
                             </div>
                             <div>
                                 <a href="#order" class="btn btn--theme fz-l">Обсудить проект</a>
@@ -753,116 +769,130 @@
     </main>
 
 
-  <footer class="footer bg-dark">
-    <div class="my-container flex flex-column gap-6">
-      <div class="footer__top flex flex-column gap-6 flex-md-row">
-        <a href="../index.html" class="logo white-logo">
-          <div class="logo__name">Сайт<span class="colored">Строй</span></div>
-          <div class="logo__text">Вебстудия полного цикла</div>
-        </a>
-        <div class="city">
-          <button class="city__current">г. Краснодар</button>
-          <div class="city__wrap">
-            <ul class="city__list font-medium">
-              <li><a href="#">Москва</a></li>
-              <li><a href="#">Санкт-Петербург</a></li>
-            </ul>
-            <ul class="city__list two-cols">
-              <li><a href="#">Краснодар</a></li>
-              <li><a href="#">Новосибирск</a></li>
-              <li><a href="#">Сочи</a></li>
-              <li><a href="#">Владивосток</a></li>
-              <li><a href="#">Казань</a></li>
-              <li><a href="#">Самара</a></li>
-              <li><a href="#">Екатеринбург</a></li>
-              <li><a href="#">Ростов-на-Дону</a></li>
-              <li><a href="#">Нижний Новгород</a></li>
-            </ul>
-          </div>
+    <footer class="footer bg-dark">
+        <div class="my-container flex flex-column gap-6">
+            <div class="footer__top flex flex-column gap-6 flex-md-row">
+                <a href="../index.html" class="logo white-logo">
+                    <div class="logo__name">Сайт<span class="colored">Строй</span></div>
+                    <div class="logo__text">Вебстудия полного цикла</div>
+                </a>
+                <div class="city">
+                    <button class="city__current">г. Краснодар</button>
+                    <div class="city__wrap">
+                        <ul class="city__list font-medium">
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Санкт-Петербург</a></li>
+                        </ul>
+                        <ul class="city__list two-cols">
+                            <li><a href="#">Краснодар</a></li>
+                            <li><a href="#">Новосибирск</a></li>
+                            <li><a href="#">Сочи</a></li>
+                            <li><a href="#">Владивосток</a></li>
+                            <li><a href="#">Казань</a></li>
+                            <li><a href="#">Самара</a></li>
+                            <li><a href="#">Екатеринбург</a></li>
+                            <li><a href="#">Ростов-на-Дону</a></li>
+                            <li><a href="#">Нижний Новгород</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <nav class="nav flex flex-column justify-between items-start gap-5 flex-sm-row">
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Услуги</span>
+                        <li class="fz-s"><a href="./service-page.html">Реклама и продвижение</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Контекстная реклама</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Аудит сайта</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Создание сайта</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Веб аналитика</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Техническая поддержка</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Управление репутацией</a></li>
+                        <li class="fz-s"><a href="./service-page.html">Мировое продвижение</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Купить</span>
+                        <li class="fz-s" style="color: #FFF;"><a href="./done-sites.htm">Готовые сайты</a></li>
+                        <li class="fz-s"><a href="./online-store.html">Интернет-магазин</a></li>
+                        <li class="fz-s"><a href="#">Одностраничный сайт</a></li>
+                        <li class="fz-s"><a href="#">Корпоративный сайт</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Кейсы</span>
+                        <li class="fz-s"><a href="#">Сайты</a></li>
+                        <li class="fz-s"><a href="#">Реклама и продвижение</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Компания</span>
+                        <li class="fz-s"><a href="#">О нас</a></li>
+                        <li class="fz-s"><a href="#">Документы</a></li>
+                        <li class="fz-s"><a href="#">Контакты</a></li>
+                        <li class="fz-s"><a href="#">Реквизиты</a></li>
+                    </ul>
+                    <ul class="flex flex-column">
+                        <span class="fz-medium">Полезное</span>
+                        <li class="fz-s"><a href="#">Акции и бонусы</a></li>
+                        <li class="fz-s"><a href="#">FAQ</a></li>
+                        <li class="fz-s"><a href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom flex flex-column justify-between gap-5 flex-md-row">
+                <div class="fz-s footer__bottom-rights">© 2025 Все права защищены</div>
+                <div class="fz-s footer__bottom-policy"><a href="">Политика конфиденциальности</a></div>
+                <div class="fz-s footer__bottom-phone"><a href="tel:+79996333328">+7 999 633 33 28</a></div>
+                <div class="fz-s footer__bottom-socials">
+                    <ul class="soc-links">
+                        <li>
+                            <a href="#" class="soc-links__tg" alt="Telegram"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="footer__menu">
-        <nav class="nav flex flex-column justify-between items-start gap-5 flex-sm-row">
-          <ul class="flex flex-column">
-            <span class="fz-medium">Услуги</span>
-            <li class="fz-s"><a href="./service-page.html">Реклама и продвижение</a></li>
-            <li class="fz-s"><a href="./service-page.html">Контекстная реклама</a></li>
-            <li class="fz-s"><a href="./service-page.html">Аудит сайта</a></li>
-            <li class="fz-s"><a href="./service-page.html">Создание сайта</a></li>
-            <li class="fz-s"><a href="./service-page.html">Веб аналитика</a></li>
-            <li class="fz-s"><a href="./service-page.html">Техническая поддержка</a></li>
-            <li class="fz-s"><a href="./service-page.html">Управление репутацией</a></li>
-            <li class="fz-s"><a href="./service-page.html">Мировое продвижение</a></li>
-          </ul>
-          <ul class="flex flex-column">
-            <span class="fz-medium">Купить</span>
-            <li class="fz-s" style="color: #FFF;"><a href="./done-sites.htm">Готовые сайты</a></li>
-            <li class="fz-s"><a href="./online-store.html">Интернет-магазин</a></li>
-            <li class="fz-s"><a href="#">Одностраничный сайт</a></li>
-            <li class="fz-s"><a href="#">Корпоративный сайт</a></li>
-          </ul>
-          <ul class="flex flex-column">
-            <span class="fz-medium">Кейсы</span>
-            <li class="fz-s"><a href="#">Сайты</a></li>
-            <li class="fz-s"><a href="#">Реклама и продвижение</a></li>
-          </ul>
-          <ul class="flex flex-column">
-            <span class="fz-medium">Компания</span>
-            <li class="fz-s"><a href="#">О нас</a></li>
-            <li class="fz-s"><a href="#">Документы</a></li>
-            <li class="fz-s"><a href="#">Контакты</a></li>
-            <li class="fz-s"><a href="#">Реквизиты</a></li>
-          </ul>
-          <ul class="flex flex-column">
-            <span class="fz-medium">Полезное</span>
-            <li class="fz-s"><a href="#">Акции и бонусы</a></li>
-            <li class="fz-s"><a href="#">FAQ</a></li>
-            <li class="fz-s"><a href="#">Статьи</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__bottom flex flex-column justify-between gap-5 flex-md-row">
-        <div class="fz-s footer__bottom-rights">© 2025 Все права защищены</div>
-        <div class="fz-s footer__bottom-policy"><a href="">Политика конфиденциальности</a></div>
-        <div class="fz-s footer__bottom-phone"><a href="tel:+79996333328">+7 999 633 33 28</a></div>
-        <div class="fz-s footer__bottom-socials">
-          <ul class="soc-links">
-              <li>
-                <a href="#" class="soc-links__tg" alt="Telegram"></a>
-              </li>
-              <li>
-                <a href="#" class="soc-links__wh" alt="WhatsApp"></a>
-              </li>
-            </ul>
         </div>
-      </div>
-    </div>
-    </div>
-  </footer>
+    </footer>
 
 
-    <div class="modal" id="order">
-        <h2>Оставить <span class="colored">заявку</span></h2>
-        <p>Менеджер свяжется с вами в ближайшее время и задаст уточняющие вопросы по заявке</p>
-        <form class="form form--vertical" action="">
-            <label>
-                <span>Имя*</span>
-                <input type="text" placeholder="Иван" required>
-            </label>
-            <label>
-                <span>Номер телефона*</span>
-                <input type="tel" placeholder="+7 (999) 999-99-99" required>
-            </label>
-            <label>
-                <span>Адрес сайта*</span>
-                <input type="text" placeholder="www">
-            </label>
-            <label class="agreement">
-                <input type="checkbox" name="agreement" id="agreement" required>
-                <span>Вы соглашаетесь <a href="/privacy">с условиями обработки персональных данных</a></span>
-            </label>
-            <button type="submit" class="btn btn--theme">Отправить заявку</button>
-        </form>
+    <div class="my-modal" id="order">
+        <div class="my-modal__container">
+            <div class="my-modal__header">
+                <button class="close-modal-button"></button>
+            </div>
+            <div class="flex flex-column gap-4 my-modal__content">
+                <div class="flex flex-column  my-modal__text-content">
+                    <h2 class="mb-small">Оставить <span class="colored">заявку</span></h2>
+                    <p>Менеджер свяжется с вами в ближайшее время и задаст уточняющие вопросы по заявке</p>
+                </div>
+                <form class="form form--vertical form--gray my-modal__form" action="">
+                    <div class="form__inputs">
+                        <label class="input-wrap">
+                            <span>Имя*</span>
+                            <input type="text" placeholder="Иван" required>
+                        </label>
+                        <label class="input-wrap">
+                            <span>Номер телефона*</span>
+                            <input type="tel" placeholder="+7 (999) 999-99-99" required>
+                        </label>
+                        <label class="input-wrap">
+                            <span>Адрес сайта*</span>
+                            <input type="text" placeholder="www">
+                        </label>
+                    </div>
+                    <label class="agreement my-checkbox">
+                        <input class="my-checkbox__old" type="checkbox" name="agreement" id="agreement" required>
+                        <div class="my-checkbox__new"></div>
+                        <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки
+                                персональных
+                                данных</a></span>
+                    </label>
+                    <button type="submit" class="btn btn--theme">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
     </div>
 
 

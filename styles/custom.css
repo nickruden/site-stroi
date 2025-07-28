@@ -490,7 +490,6 @@ h3,
 }
 
 .align-stretch .swiper-slide {
-  display: flex;
   height: auto;
 }
 

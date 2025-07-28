@@ -221,3 +221,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+// скрипт строки поиска в хедере
+const searchBtn = document.querySelectorAll('.button-search');
+const searchOverlay = document.querySelector('.search-overlay');
+const searchClose = searchOverlay.querySelector('.search__close');
+const searchInput = searchOverlay.querySelector('.search-line__input');
+
+searchBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    searchOverlay.classList.add('active');
+    searchInput.focus();
+    searchInput.select();
+    document.body.classList = "";
+  });
+});
+
+searchClose.addEventListener('click', () => {
+  searchOverlay.classList.remove('active');
+  searchInput.value = '';
+});

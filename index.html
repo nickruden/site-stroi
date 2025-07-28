@@ -37,7 +37,16 @@
 
 <body>
   <header class="header">
-    <div class="my-container">
+    <div class="search-overlay">
+      <div class="my-container search__container">
+        <div class="search-line">
+          <div class="search-line__icon"></div>
+          <input class="search-line__input" type="text" placeholder="Введите для поиска">
+        </div>
+        <button class="search__close"></button>
+      </div>
+    </div>
+    <div class="my-container header__container">
       <div class="row">
         <div class="col-auto">
           <a href="./index.html" class="logo">
@@ -1028,39 +1037,39 @@
 
   <div class="my-modal" id="order">
     <div class="my-modal__container">
-    <div class="my-modal__header">
-      <button class="close-modal-button"></button>
-    </div>
-    <div class="flex flex-column gap-4 my-modal__content">
-      <div class="flex flex-column  my-modal__text-content">
-        <h2 class="mb-small">Оставить <span class="colored">заявку</span></h2>
-        <p>Менеджер свяжется с вами в ближайшее время и задаст уточняющие вопросы по заявке</p>
+      <div class="my-modal__header">
+        <button class="close-modal-button"></button>
       </div>
-      <form class="form form--vertical form--gray my-modal__form" action="">
-        <div class="form__inputs">
-          <label class="input-wrap">
-            <span>Имя*</span>
-            <input type="text" placeholder="Иван" required>
-          </label>
-          <label class="input-wrap">
-            <span>Номер телефона*</span>
-            <input type="tel" placeholder="+7 (999) 999-99-99" required>
-          </label>
-          <label class="input-wrap">
-            <span>Адрес сайта*</span>
-            <input type="text" placeholder="www">
-          </label>
+      <div class="flex flex-column gap-4 my-modal__content">
+        <div class="flex flex-column  my-modal__text-content">
+          <h2 class="mb-small">Оставить <span class="colored">заявку</span></h2>
+          <p>Менеджер свяжется с вами в ближайшее время и задаст уточняющие вопросы по заявке</p>
         </div>
-        <label class="agreement my-checkbox">
-          <input class="my-checkbox__old" type="checkbox" name="agreement" id="agreement" required>
-          <div class="my-checkbox__new"></div>
-          <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки
-              персональных
-              данных</a></span>
-        </label>
-        <button type="submit" class="btn btn--theme">Отправить заявку</button>
-      </form>
-    </div>
+        <form class="form form--vertical form--gray my-modal__form" action="">
+          <div class="form__inputs">
+            <label class="input-wrap">
+              <span>Имя*</span>
+              <input type="text" placeholder="Иван" required>
+            </label>
+            <label class="input-wrap">
+              <span>Номер телефона*</span>
+              <input type="tel" placeholder="+7 (999) 999-99-99" required>
+            </label>
+            <label class="input-wrap">
+              <span>Адрес сайта*</span>
+              <input type="text" placeholder="www">
+            </label>
+          </div>
+          <label class="agreement my-checkbox">
+            <input class="my-checkbox__old" type="checkbox" name="agreement" id="agreement" required>
+            <div class="my-checkbox__new"></div>
+            <span class="my-checkbox__text">Вы соглашаетесь <a href="/privacy">с условиями обработки
+                персональных
+                данных</a></span>
+          </label>
+          <button type="submit" class="btn btn--theme">Отправить заявку</button>
+        </form>
+      </div>
     </div>
   </div>
 
