@@ -233,11 +233,9 @@ searchBtn.forEach((btn) => {
     searchOverlay.classList.add("active");
     searchInput.focus();
     searchInput.select();
-    document.body.classList = "";
-    setTimeout(
-      () => document.querySelector(".header").classList.remove("bg-white"),
-      330
-    );
+    setTimeout(() => {
+      document.querySelector(".header").classList.remove("bg-white");
+    }, 330);
   });
 });
 
