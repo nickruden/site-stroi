@@ -605,7 +605,7 @@ li:hover .submenu {
 }
 
 .search__container {
-  padding: 1.4rem 3rem;
+  padding: 0.8rem 3rem;
   border-bottom: 1px solid var(--color-border);
   border-left: 1px solid var(--color-border);
   border-right: 1px solid var(--color-border);
@@ -619,13 +619,13 @@ li:hover .submenu {
 
 @media (max-width: 991px) {
   .search__container {
-    padding: 1.2rem 2rem;
+    padding: 1.27rem 2rem;
   }
 }
 
 @media (max-width: 575px) {
   .search__container {
-    padding: 1.1rem 1rem;
+    padding: 1.15rem 1rem;
   }
 }
 
