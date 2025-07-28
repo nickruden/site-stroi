@@ -1,7 +1,9 @@
 // Красим шапку при скролле
 function colorHeaderToWhite() {
   const header = document.querySelector(".header");
-  if (window.scrollY > 50) {
+  const isSearchOpen = searchOverlay.classList.contains("active");
+
+  if (window.scrollY > 50 && !isSearchOpen) {
     header.classList.add("bg-white");
   } else {
     header.classList.remove("bg-white");
