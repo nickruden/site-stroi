@@ -594,7 +594,7 @@ li:hover .submenu {
   width: 100%;
 }
 
-.search-overlay.active + .header__container:after {
+.search-overlay.active+.header__container:after {
   content: "";
   position: absolute;
   display: none;
